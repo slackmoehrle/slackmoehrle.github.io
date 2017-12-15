@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Creating a menu screen · GitBook</title>
+        <title>UI Housekeeping · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="menu_scene.html" />
+    <link rel="next" href="background.html" />
     
     
-    <link rel="prev" href="../02-starting-development/creating_a_cocos_creator_project.html" />
+    <link rel="prev" href="menu_scene.html" />
     
 
     </head>
@@ -226,7 +226,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="./">
             
                 <a href="./">
             
@@ -253,7 +253,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="housekeeping.html">
+        <li class="chapter active" data-level="1.4.2" data-path="housekeeping.html">
             
                 <a href="housekeeping.html">
             
@@ -360,7 +360,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Creating a menu screen</a>
+        <a href=".." >UI Housekeeping</a>
     </h1>
 </div>
 
@@ -375,21 +375,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="creating-a-menu-screen">Creating a menu screen</h2>
-<p>When you start to play a game the first thing you notice is a <strong>menu screen</strong>. This is usually a screen that has the games title, perhaps who made it, colorful graphics, possibily music and most importantly a <strong>play button</strong>. Pressing the <strong>play button</strong> usually starts the game playing.</p>
-<p>Take a look at these popular games and what their menu screens look like:</p>
-<p>  <img src="img/splash_1.jpg" alt="">  <img src="img/splash_3.png" alt="">
-  <img src="img/splash_2.png" alt="">  <img src="img/splash_4.jpg" alt=""></p>
-<p>After looking at these examples, let&apos;s make a menu screen of our own.</p>
-<h3 id="table-of-contents">Table of contents</h3>
+                                <h2 id="ui-housekeeping">UI housekeeping.</h2>
+<p>We need to do a few tasks to get started laying out our user interface. These items include choosing a <strong>design resolution</strong> and adding any <strong>Sprites</strong> that we need to our <strong>Cocos Creator</strong> project.</p>
+<h3 id="setting-the-design-resolution">Setting the design resolution</h3>
+<p>One really important task is to decide on a <strong>design resolution</strong> for our game. This is going to be a <strong>portrait</strong> oriented game so the pieces have enough time to fall from the top of the screen. Using <strong>landscape</strong> might not give the player enough time to react. Let&apos;s stick with the <strong>960 x 640</strong> design resolution. You can tell what the design resolution is by looking at the properties of the <strong>Canvas</strong> object:</p>
+<p>  <img src="img/design_resolution_landscape.png" alt=""></p>
 <ul>
-<li><a href="menu_scene.html">Creating a scene</a></li>
-<li><a href="housekeeping.html">UI Housekeeping</a></li>
-<li><a href="background.html">Creating a colored background</a></li>
-<li><a href="game_title.html">Adding a game title</a></li>
-<li><a href="sprites.html">Adding Sprites</a></li>
-<li><a href="play_button.html">Creating a play button</a></li>
+<li><p>However, since we want this game <strong>portrait</strong> we need to swap the width and height with each other. Our height needs to be the biggest number.</p>
+<p>  <img src="img/design_resolution_portrait.png" alt=""></p>
+</li>
+<li><p>Next, in the <strong>Node tree</strong> panel, <strong>right click</strong> on <strong>Canvas</strong> node and select: <strong>Create --&gt; Create Empty Node</strong>. This will create an <strong>empty node</strong> to hold our user interface items.</p>
+<p>  <img src="img/create_empty_node.png" alt=""></p>
+</li>
+<li><p>Last, <strong>right click</strong> on the newly created <code>Node</code> and rename it to <strong>UI</strong>.</p>
+<p>  <img src="img/rename_ui_node.png" alt=""></p>
+</li>
 </ul>
+<h3 id="adding-sprites">Adding Sprites</h3>
+<p><strong>Sprites</strong> are of course going to be used in out game. Let&apos;s get them added right from the start. We will use them in several places so if you can do this up front is always a good. You can add <strong>Sprites</strong> in two ways.</p>
+<ul>
+<li><ol>
+<li><p>Drag and drop from your file system into the <strong>Assets</strong> panel.</p>
+<p><img src="img/asset_panel_add_2.png" alt=""></p>
+</li>
+</ol>
+</li>
+<li><ol>
+<li><p>From the <strong>Cocos Creator</strong> menus, select <strong>File --&gt; Import Asset</strong>.</p>
+<p><img src="img/asset_panel_add_1.png" alt=""></p>
+</li>
+</ol>
+</li>
+</ul>
+<p><strong>Task:</strong> Now is a good time to save your project! From the <strong>File</strong> menu, select <strong>Save Scene</strong> or use your operating systems shortcut key.</p>
 
                                 
                                 </section>
@@ -417,12 +435,12 @@
 
             
                 
-                <a href="../02-starting-development/creating_a_cocos_creator_project.html" class="navigation navigation-prev " aria-label="Previous page: Creating a Cocos Creator project">
+                <a href="menu_scene.html" class="navigation navigation-prev " aria-label="Previous page: Creating a scene">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="menu_scene.html" class="navigation navigation-next " aria-label="Next page: Creating a scene">
+                <a href="background.html" class="navigation navigation-next " aria-label="Next page: Creating a colored background">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -433,7 +451,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Creating a menu screen","level":"1.4","depth":1,"next":{"title":"Creating a scene","level":"1.4.1","depth":2,"path":"03-creating-a-menu-screen/menu_scene.md","ref":"03-creating-a-menu-screen/menu_scene.md","articles":[]},"previous":{"title":"Creating a Cocos Creator project","level":"1.3.4","depth":2,"path":"02-starting-development/creating_a_cocos_creator_project.md","ref":"02-starting-development/creating_a_cocos_creator_project.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"03-creating-a-menu-screen/index.md","mtime":"2017-12-15T06:07:15.024Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-15T09:22:19.010Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"UI Housekeeping","level":"1.4.2","depth":2,"next":{"title":"Creating a colored background","level":"1.4.3","depth":2,"path":"03-creating-a-menu-screen/background.md","ref":"03-creating-a-menu-screen/background.md","articles":[]},"previous":{"title":"Creating a scene","level":"1.4.1","depth":2,"path":"03-creating-a-menu-screen/menu_scene.md","ref":"03-creating-a-menu-screen/menu_scene.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"03-creating-a-menu-screen/housekeeping.md","mtime":"2017-12-14T09:09:13.001Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-15T09:22:19.010Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

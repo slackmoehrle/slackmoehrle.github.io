@@ -142,7 +142,7 @@
                 <a href="../01-getting-started/cpp-developers.html">
             
                     
-                    c++ developers
+                    C++ developers
             
                 </a>
             
@@ -258,7 +258,7 @@
                 <a href="../03-creating-a-menu-screen/housekeeping.html">
             
                     
-                    UI Housekeeping
+                    UI housekeeping
             
                 </a>
             
@@ -297,7 +297,7 @@
                 <a href="../03-creating-a-menu-screen/sprites.html">
             
                     
-                    Adding Sprites
+                    Adding sprites
             
                 </a>
             
@@ -311,6 +311,109 @@
             
                     
                     Creating a play button
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-laying-out-gameplay-ui/">
+            
+                <a href="../04-laying-out-gameplay-ui/">
+            
+                    
+                    Laying out the game user interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-laying-out-gameplay-ui/quick_getting_started.html">
+            
+                <a href="../04-laying-out-gameplay-ui/quick_getting_started.html">
+            
+                    
+                    Getting started by a quick review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-laying-out-gameplay-ui/creating_the_rest_of_the_ui.html">
+            
+                <a href="../04-laying-out-gameplay-ui/creating_the_rest_of_the_ui.html">
+            
+                    
+                    Creating more of the game interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-laying-out-gameplay-ui/starting_to_code.html">
+            
+                <a href="../04-laying-out-gameplay-ui/starting_to_code.html">
+            
+                    
+                    Starting to code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-writing-game-logic/">
+            
+                <a href="../05-writing-game-logic/">
+            
+                    
+                    Writing the core game logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05-writing-game-logic/what-logic-does-our-game-need.html">
+            
+                <a href="../05-writing-game-logic/what-logic-does-our-game-need.html">
+            
+                    
+                    What logic does our game need?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05-writing-game-logic/populating-the-game-board.html">
+            
+                <a href="../05-writing-game-logic/populating-the-game-board.html">
+            
+                    
+                    Populating the game board
             
                 </a>
             
@@ -376,7 +479,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="artwork">Artwork</h2>
-<p>The artwork for our game will be very simple. We can use colored <code>Node</code> objects to act as <strong>Layers</strong> and simple squares and circles to represent the <strong>germs</strong> and <strong>pills</strong> in the original <strong>Dr. Mario</strong> game.</p>
+<p>The artwork for our game will be very simple. We can use colored <code>Node</code> objects to act as <strong>Layers</strong> and simple squares and circles to represent the <strong>germs</strong> and <strong>pill halves</strong> in the original <strong>Dr. Mario</strong> game.</p>
 <p>For simplicity purposes we can use a simple colored circle to represent the <strong>germs</strong>. Four colors seems like enough. Example:</p>
 <p>  <img src="img/circle-blue.png" alt=""> <img src="img/circle-green.png" alt="">
   <img src="img/circle-red.png" alt=""> <img src="img/circle-yellow.png" alt=""></p>
@@ -388,36 +491,36 @@
 <thead>
 <tr>
 <th>.</th>
-<th>R</th>
-<th>B</th>
-<th>Y</th>
-<th>G</th>
+<th><strong>Red</strong></th>
+<th><strong>Blue</strong></th>
+<th><strong>Yellow</strong></th>
+<th><strong>Green</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>R</strong></td>
+<td><strong>Red</strong></td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 </tr>
 <tr>
-<td><strong>B</strong></td>
+<td><strong>Blue</strong></td>
 <td>x</td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 </tr>
 <tr>
-<td><strong>Y</strong></td>
+<td><strong>Yellow</strong></td>
 <td>x</td>
 <td>x</td>
 <td><strong>y</strong></td>
 <td><strong>y</strong></td>
 </tr>
 <tr>
-<td><strong>G</strong></td>
+<td><strong>Green</strong></td>
 <td>x</td>
 <td>x</td>
 <td>x</td>
@@ -426,7 +529,7 @@
 </tbody>
 </table>
 <p>We don&apos;t need a designer or artist to do this for us! We can code right? Let&apos;s combine the 2 squares programatically. We will go through this step further on in this tutorial.</p>
-<p>With our art in hand, let&apos;s get started on the good stuff. Laying out our game and writing some code. Code, code, code-er.</p>
+<p>With our art in hand, let&apos;s get started on the good stuff. Laying out our game and writing some code.</p>
 
                                 
                                 </section>
@@ -470,7 +573,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Artwork","level":"1.3.3","depth":2,"next":{"title":"Creating a Cocos Creator project","level":"1.3.4","depth":2,"path":"02-starting-development/creating_a_cocos_creator_project.md","ref":"02-starting-development/creating_a_cocos_creator_project.md","articles":[]},"previous":{"title":"Designing this game","level":"1.3.2","depth":2,"path":"02-starting-development/design.md","ref":"02-starting-development/design.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"02-starting-development/artwork.md","mtime":"2017-12-14T03:20:12.930Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-15T09:22:19.010Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Artwork","level":"1.3.3","depth":2,"next":{"title":"Creating a Cocos Creator project","level":"1.3.4","depth":2,"path":"02-starting-development/creating_a_cocos_creator_project.md","ref":"02-starting-development/creating_a_cocos_creator_project.md","articles":[]},"previous":{"title":"Designing this game","level":"1.3.2","depth":2,"path":"02-starting-development/design.md","ref":"02-starting-development/design.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"02-starting-development/artwork.md","mtime":"2018-01-05T21:38:04.232Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-12T01:12:42.272Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

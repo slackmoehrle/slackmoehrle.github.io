@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Creating a play button · GitBook</title>
+        <title>Writing the core game logic · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../04-laying-out-gameplay-ui/" />
+    <link rel="next" href="what-logic-does-our-game-need.html" />
     
     
-    <link rel="prev" href="sprites.html" />
+    <link rel="prev" href="../04-laying-out-gameplay-ui/starting_to_code.html" />
     
 
     </head>
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="./">
+        <li class="chapter " data-level="1.4" data-path="../03-creating-a-menu-screen/">
             
-                <a href="./">
+                <a href="../03-creating-a-menu-screen/">
             
                     
                     Creating a menu screen
@@ -240,9 +240,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" data-path="menu_scene.html">
+        <li class="chapter " data-level="1.4.1" data-path="../03-creating-a-menu-screen/menu_scene.html">
             
-                <a href="menu_scene.html">
+                <a href="../03-creating-a-menu-screen/menu_scene.html">
             
                     
                     Creating a scene
@@ -253,9 +253,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="housekeeping.html">
+        <li class="chapter " data-level="1.4.2" data-path="../03-creating-a-menu-screen/housekeeping.html">
             
-                <a href="housekeeping.html">
+                <a href="../03-creating-a-menu-screen/housekeeping.html">
             
                     
                     UI housekeeping
@@ -266,9 +266,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="background.html">
+        <li class="chapter " data-level="1.4.3" data-path="../03-creating-a-menu-screen/background.html">
             
-                <a href="background.html">
+                <a href="../03-creating-a-menu-screen/background.html">
             
                     
                     Creating a colored background
@@ -279,9 +279,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="game_title.html">
+        <li class="chapter " data-level="1.4.4" data-path="../03-creating-a-menu-screen/game_title.html">
             
-                <a href="game_title.html">
+                <a href="../03-creating-a-menu-screen/game_title.html">
             
                     
                     Adding a game title
@@ -292,9 +292,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.5" data-path="sprites.html">
+        <li class="chapter " data-level="1.4.5" data-path="../03-creating-a-menu-screen/sprites.html">
             
-                <a href="sprites.html">
+                <a href="../03-creating-a-menu-screen/sprites.html">
             
                     
                     Adding sprites
@@ -305,9 +305,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.4.6" data-path="play_button.html">
+        <li class="chapter " data-level="1.4.6" data-path="../03-creating-a-menu-screen/play_button.html">
             
-                <a href="play_button.html">
+                <a href="../03-creating-a-menu-screen/play_button.html">
             
                     
                     Creating a play button
@@ -381,9 +381,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../05-writing-game-logic/">
+        <li class="chapter active" data-level="1.6" data-path="./">
             
-                <a href="../05-writing-game-logic/">
+                <a href="./">
             
                     
                     Writing the core game logic
@@ -395,9 +395,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../05-writing-game-logic/what-logic-does-our-game-need.html">
+        <li class="chapter " data-level="1.6.1" data-path="what-logic-does-our-game-need.html">
             
-                <a href="../05-writing-game-logic/what-logic-does-our-game-need.html">
+                <a href="what-logic-does-our-game-need.html">
             
                     
                     What logic does our game need?
@@ -408,9 +408,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../05-writing-game-logic/populating-the-game-board.html">
+        <li class="chapter " data-level="1.6.2" data-path="populating-the-game-board.html">
             
-                <a href="../05-writing-game-logic/populating-the-game-board.html">
+                <a href="populating-the-game-board.html">
             
                     
                     Populating the game board
@@ -463,7 +463,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Creating a play button</a>
+        <a href=".." >Writing the core game logic</a>
     </h1>
 </div>
 
@@ -478,58 +478,13 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="creating-a-play-buton">Creating a play buton</h2>
-<p>In the previous steps, we created a background, a game title and added some Sprites to make it look more interesting. Next, we need to add a button. When the button is pressed, we need to load the <code>Scene</code> object that holds the logiv for our game.</p>
-<h3 id="adding-a-play-button">Adding a Play button</h3>
-<p>Adding a button, or adding <em>button like</em> functionality can be done in several ways. You can use a <strong>Button</strong> node from the <strong>Node Library</strong> panel. You can use a <code>Sprite</code> and make it act like button. Both are find ways to achieve our goal. For this example, let&apos;s use a <strong>Button</strong> node from the <strong>Node Library</strong> panel.</p>
-<p>  <img src="img/node_library_button.png" alt=""></p>
+                                <h2 id="writing-core-game-logic">Writing core game logic</h2>
+<p>We are all set to start writing our core game logic. Our game will quickly start to take shape and become playable.</p>
+<h3 id="table-of-contents">Table of contents</h3>
 <ul>
-<li><p>First, from the <strong>Node Library</strong> panel, drag and drop a <strong>Button</strong>  on to the <strong>Background</strong> node in the <strong>Node Tree</strong> panel.</p>
-<p>  <img src="img/node_tree_button.png" alt=""></p>
-</li>
-<li><p>Second, rename the label to <strong>Play</strong> in the <strong>Node Tree</strong> panel.</p>
-</li>
-<li><p>Third, change the <strong>Label</strong> of the <strong>Play</strong> button to <strong>Start Game</strong>.</p>
-<p>  <img src="img/label_start_game.png" alt=""></p>
-</li>
-<li><p>Last, with <strong>Play</strong> selected, change some properites for the button. This should include <strong>position</strong>, <strong>size</strong>, <strong>color</strong>, etc. Make it look how you wish. I stuck with the default properties for the purpose of this demo.</p>
-<p>  <img src="img/background_button.png" alt=""></p>
-</li>
+<li><a href="what-logic-does-our-game-need.html">What logic does our game need?</a></li>
+<li><a href="populating-the-game-board.html">Populating the game board</a></li>
 </ul>
-<h3 id="making-the-play-button-work">Making the Play button work</h3>
-<p>Now that we have a button, we need to make it run code when we click it.</p>
-<ul>
-<li><p>First, select the <strong>Play</strong> button so that some properties can be added. Scroll down in the <strong>Properties</strong> panel until you see this:</p>
-<p>  <img src="img/add_click_event_1.png" alt=""></p>
-</li>
-<li><p>Second, use the editor to add a <strong>click event</strong>:</p>
-<p>  <img src="img/add_click_event_2.png" alt=""></p>
-</li>
-<li><p>Third, create a new Javascript file called <strong>MenuScreen.js</strong>. This is where any code we need for this <code>Scene</code> will go. We will add our <strong>Play</strong> buttons logic here. You can do this by right clicking on the <strong>Script</strong> folder in the <strong>Assets Panel</strong> and selecting <strong>Create --&gt; Javascript</strong>.</p>
-<p>  <img src="img/add_click_event_3.png" alt=""> <img src="img/add_click_event_4.png" alt=""></p>
-</li>
-<li><p>Fourth, click the <strong>Add Component</strong> button and select <strong>Add Custom Component</strong> so we can add the newly created <strong>MainScene.js</strong> as a component of our <strong>Play</strong> button.</p>
-<p>  <img src="img/add_click_event_5.png" alt=""></p>
-</li>
-<li><p>Fifth, we need to add a <strong>callback</strong> to the <strong>MainScene.js</strong> so that we specify what code is to be run when the <strong>Play</strong> button is clicked. Double clicking on the <strong>MainScene.js</strong> will open it in the default external text editor specified by your operating system. Add the following <strong>callback</strong>:</p>
-<pre><code class="lang-JavaScript">callback: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">event</span>) </span>{
-      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;starting game...&quot;</span>);    
-}
-</code></pre>
-<p>We end up with a a Javascript file that looks like:</p>
-<p><img src="img/add_click_event_6.png" alt=""></p>
-</li>
-<li><p>Next, we need to tell the editor that when our <strong>Play</strong> button is clicked we need to run a certain chunk of Javascript code. This is easily done by dragging a reference to the button to the properties dialog. Then you select the <strong>MainScene.js</strong> file and the function you want to run. In our case we called it <strong>callback:</strong>. Selecting a better name when your needs get complex is probably a good idea. Example:</p>
-<p>  <img src="img/add_click_event_7.png" alt=""></p>
-</li>
-<li><p>Last, your <strong>Properties</strong> panel should look like this when completed:</p>
-<p>  <img src="img/add_click_event_8.png" alt=""></p>
-</li>
-</ul>
-<p>When we run our game and click out button we should see that it works:</p>
-<p>  <img src="img/menu_scene_final_running.png" alt=""></p>
-<p>We will come back and add more code to this button later. For now, our button works when pressed. Let&apos;s move on to creating our main game scene, where the bulk of our game play will take place.  </p>
-<p><strong>Task:</strong> Now is a good time to save your project! From the <strong>File</strong> menu, select <strong>Save Scene</strong> or use your operating system&apos;s shortcut key.</p>
 
                                 
                                 </section>
@@ -557,12 +512,12 @@
 
             
                 
-                <a href="sprites.html" class="navigation navigation-prev " aria-label="Previous page: Adding sprites">
+                <a href="../04-laying-out-gameplay-ui/starting_to_code.html" class="navigation navigation-prev " aria-label="Previous page: Starting to code">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../04-laying-out-gameplay-ui/" class="navigation navigation-next " aria-label="Next page: Laying out the game user interface">
+                <a href="what-logic-does-our-game-need.html" class="navigation navigation-next " aria-label="Next page: What logic does our game need?">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -573,7 +528,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Creating a play button","level":"1.4.6","depth":2,"next":{"title":"Laying out the game user interface","level":"1.5","depth":1,"path":"04-laying-out-gameplay-ui/index.md","ref":"04-laying-out-gameplay-ui/index.md","articles":[{"title":"Getting started by a quick review","level":"1.5.1","depth":2,"path":"04-laying-out-gameplay-ui/quick_getting_started.md","ref":"04-laying-out-gameplay-ui/quick_getting_started.md","articles":[]},{"title":"Creating more of the game interface","level":"1.5.2","depth":2,"path":"04-laying-out-gameplay-ui/creating_the_rest_of_the_ui.md","ref":"04-laying-out-gameplay-ui/creating_the_rest_of_the_ui.md","articles":[]},{"title":"Starting to code","level":"1.5.3","depth":2,"path":"04-laying-out-gameplay-ui/starting_to_code.md","ref":"04-laying-out-gameplay-ui/starting_to_code.md","articles":[]}]},"previous":{"title":"Adding sprites","level":"1.4.5","depth":2,"path":"03-creating-a-menu-screen/sprites.md","ref":"03-creating-a-menu-screen/sprites.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"03-creating-a-menu-screen/play_button.md","mtime":"2018-01-05T21:53:43.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-12T01:12:42.272Z"},"basePath":"..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Writing the core game logic","level":"1.6","depth":1,"next":{"title":"What logic does our game need?","level":"1.6.1","depth":2,"path":"05-writing-game-logic/what-logic-does-our-game-need.md","ref":"05-writing-game-logic/what-logic-does-our-game-need.md","articles":[]},"previous":{"title":"Starting to code","level":"1.5.3","depth":2,"path":"04-laying-out-gameplay-ui/starting_to_code.md","ref":"04-laying-out-gameplay-ui/starting_to_code.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"05-writing-game-logic/index.md","mtime":"2017-12-21T09:29:51.557Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-01-12T01:12:42.272Z"},"basePath":"..","book":{"language":"en"}});
         });
     </script>
 </div>

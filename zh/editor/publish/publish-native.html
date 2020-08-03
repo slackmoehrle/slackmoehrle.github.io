@@ -1,0 +1,3150 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>发布到原生平台 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="setup-native-development.html" />
+    
+    
+    <link rel="prev" href="publish-web.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://cocos.com" class="btn" target="_blank"><img src="https://forum.cocos.org/images/logo.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">English</a></li>
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">1.1</span></a>
+            <ul class="hovershow">
+                
+                <li><a href="https://docs.cocos.com/creator3d/1.0/manual/zh" class="btn">Version: <span style="font-weight:bold; display: inline">1.0</span></a></li>
+                
+                <li><a href="https://docs.cocos.com/creator3d/manual/zh" class="btn">Version: <span style="font-weight:bold; display: inline">1.2</span></a></li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos Creator</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/creator/manual/zh" class="btn">手册文档</a></li>
+                
+                <li><a href="https://docs.cocos.com/creator/api/zh" class="btn">API 参考</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos Creator 3D</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/creator3d/manual/zh" class="btn">手册文档</a></li>
+                
+                <li><a href="https://docs.cocos.com/creator3d/api/zh" class="btn">API 参考</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos2d-x</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/cocos2d-x/manual/zh" class="btn">手册文档</a></li>
+                
+                <li><a href="http://docs.cocos2d-x.org/api-ref/index.html" class="btn">API 参考</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">新手入门</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../getting-started/">
+            
+                <a href="../../getting-started/">
+            
+                    
+                    启动
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../getting-started/dashboard/">
+            
+                <a href="../../getting-started/dashboard/">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../getting-started/helloworld/">
+            
+                <a href="../../getting-started/helloworld/">
+            
+                    
+                    Hello world!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../getting-started/first-game/">
+            
+                <a href="../../getting-started/first-game/">
+            
+                    
+                    快速上手：制作第一个游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../getting-started/attention/">
+            
+                <a href="../../getting-started/attention/">
+            
+                    
+                    注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">编辑器手册</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    面板介绍
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../scene/">
+            
+                <a href="../scene/">
+            
+                    
+                    场景编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../hierarchy/">
+            
+                <a href="../hierarchy/">
+            
+                    
+                    层级管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../assets/">
+            
+                <a href="../assets/">
+            
+                    
+                    资源管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../inspector/">
+            
+                <a href="../inspector/">
+            
+                    
+                    属性检查器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../console/">
+            
+                <a href="../console/">
+            
+                    
+                    控制台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../animation/">
+            
+                <a href="../animation/">
+            
+                    
+                    动画编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../preferences/">
+            
+                <a href="../preferences/">
+            
+                    
+                    偏好设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../project/">
+            
+                <a href="../project/">
+            
+                    
+                    项目设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../engine-customization/engine-customization.html">
+            
+                <a href="../engine-customization/engine-customization.html">
+            
+                    
+                    引擎定制工作流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../preview/">
+            
+                <a href="../preview/">
+            
+                    
+                    项目预览调试
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../preview/browser.html">
+            
+                <a href="../preview/browser.html">
+            
+                    
+                    浏览器预览
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../../preview-guid.md">
+            
+                <span>
+            
+                    
+                    预览流程简介与常见错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../particle-system/editor/">
+            
+                <a href="../../particle-system/editor/">
+            
+                    
+                    粒子编辑器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../../particle-system/editor/curve-editor.html">
+            
+                <a href="../../particle-system/editor/curve-editor.html">
+            
+                    
+                    曲线编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../../particle-system/editor/gradient-editor.html">
+            
+                <a href="../../particle-system/editor/gradient-editor.html">
+            
+                    
+                    渐变色编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../../particle-system/editor/particle-effect-panel.html">
+            
+                <a href="../../particle-system/editor/particle-effect-panel.html">
+            
+                    
+                    控制面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../animation/">
+            
+                <a href="../animation/">
+            
+                    
+                    动画系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../animation/animation.html">
+            
+                <a href="../animation/animation.html">
+            
+                    
+                    关于 Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../animation/animation-editor.html">
+            
+                <a href="../animation/animation-editor.html">
+            
+                    
+                    熟悉动画编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../animation/animation-create.html">
+            
+                <a href="../animation/animation-create.html">
+            
+                    
+                    创建 Animation 组件和动画剪辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../animation/animation-clip.html">
+            
+                <a href="../animation/animation-clip.html">
+            
+                    
+                    编辑动画序列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../animation/sprite-animation.html">
+            
+                <a href="../animation/sprite-animation.html">
+            
+                    
+                    编辑帧动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../animation/animation-curve.html">
+            
+                <a href="../animation/animation-curve.html">
+            
+                    
+                    编辑动画曲线
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../animation/animation-event.html">
+            
+                <a href="../animation/animation-event.html">
+            
+                    
+                    动画事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../terrain/">
+            
+                <a href="../terrain/">
+            
+                    
+                    地形系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../lightmap/">
+            
+                <a href="../lightmap/">
+            
+                    
+                    烘焙系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    构建发布
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="build-panel.html">
+            
+                <a href="build-panel.html">
+            
+                    
+                    熟悉构建发布面板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="build-options.html">
+            
+                <a href="build-options.html">
+            
+                    
+                    通用构建参数介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="publish-web.html">
+            
+                <a href="publish-web.html">
+            
+                    
+                    发布到 web 平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.7.4" data-path="publish-native.html">
+            
+                <a href="publish-native.html">
+            
+                    
+                    发布到原生平台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.4.1" data-path="setup-native-development.html">
+            
+                <a href="setup-native-development.html">
+            
+                    
+                    安装配置原生环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4.2" data-path="debug-jsb.html">
+            
+                <a href="debug-jsb.html">
+            
+                    
+                    原生平台 JavaScript 调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="publish-alipay-mini-game.html">
+            
+                <a href="publish-alipay-mini-game.html">
+            
+                    
+                    发布到支付宝小游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="publish-huawei-mini-game.html">
+            
+                <a href="publish-huawei-mini-game.html">
+            
+                    
+                    发布到华为快游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../../publish-bytedance-mini-game.md">
+            
+                <span>
+            
+                    
+                    发布到字节小游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8" data-path="publish-cocos-play.html">
+            
+                <a href="publish-cocos-play.html">
+            
+                    
+                    发布到 Cocos Play
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.9" data-path="publish-wechatgame.html">
+            
+                <a href="publish-wechatgame.html">
+            
+                    
+                    发布到微信小游戏
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.9.1" data-path="wechatgame-plugin.html">
+            
+                <a href="wechatgame-plugin.html">
+            
+                    
+                    启用微信小游戏引擎插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.10" data-path="publish-oppo-mini-game.html">
+            
+                <a href="publish-oppo-mini-game.html">
+            
+                    
+                    发布到 OPPO 小游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.11" data-path="publish-vivo-mini-game.html">
+            
+                <a href="publish-vivo-mini-game.html">
+            
+                    
+                    发布到 vivo 小游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.12" data-path="publish-baidu-mini-game.html">
+            
+                <a href="publish-baidu-mini-game.html">
+            
+                    
+                    发布到百度小游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.13" data-path="publish-xiaomi-quick-game.html">
+            
+                <a href="publish-xiaomi-quick-game.html">
+            
+                    
+                    发布到小米快游戏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.14" data-path="publish-in-command-line.html">
+            
+                <a href="publish-in-command-line.html">
+            
+                    
+                    命令行发布项目
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.15" data-path="custom-project-build-template.html">
+            
+                <a href="custom-project-build-template.html">
+            
+                    
+                    定制项目的构建模版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.16" data-path="build-guide.html">
+            
+                <a href="build-guide.html">
+            
+                    
+                    构建流程简介与常见错误处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">引擎手册</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../module-map/">
+            
+                <a href="../../module-map/">
+            
+                    
+                    功能地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../../module-map/graphics.html">
+            
+                <a href="../../module-map/graphics.html">
+            
+                    
+                    图形渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../concepts/scene/">
+            
+                <a href="../../concepts/scene/">
+            
+                    
+                    场景及环境
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../../concepts/scene/coord.html">
+            
+                <a href="../../concepts/scene/coord.html">
+            
+                    
+                    坐标系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../../concepts/scene/scene.html">
+            
+                <a href="../../concepts/scene/scene.html">
+            
+                    
+                    场景结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../../concepts/scene/node.html">
+            
+                <a href="../../concepts/scene/node.html">
+            
+                    
+                    节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../../concepts/scene/skybox.html">
+            
+                <a href="../../concepts/scene/skybox.html">
+            
+                    
+                    天空盒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../concepts/scene/light.html">
+            
+                <a href="../../concepts/scene/light.html">
+            
+                    
+                    光照
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../../concepts/scene/light/pbr-lighting.html">
+            
+                <a href="../../concepts/scene/light/pbr-lighting.html">
+            
+                    
+                    基于物理的光照
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../../concepts/scene/light/dir-light.html">
+            
+                <a href="../../concepts/scene/light/dir-light.html">
+            
+                    
+                    主方向光
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../../concepts/scene/light/sphere-light.html">
+            
+                <a href="../../concepts/scene/light/sphere-light.html">
+            
+                    
+                    球面光
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../../concepts/scene/light/spot-light.html">
+            
+                <a href="../../concepts/scene/light/spot-light.html">
+            
+                    
+                    聚光灯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../../concepts/scene/shadow.html">
+            
+                <a href="../../concepts/scene/shadow.html">
+            
+                    
+                    阴影
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../../concepts/scene/ambient.html">
+            
+                <a href="../../concepts/scene/ambient.html">
+            
+                    
+                    环境光
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../../material-system/overview.html">
+            
+                <a href="../../material-system/overview.html">
+            
+                    
+                    材质
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../../material-system/yaml-101.html">
+            
+                <a href="../../material-system/yaml-101.html">
+            
+                    
+                    YAML 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../../material-system/effect-syntax.html">
+            
+                <a href="../../material-system/effect-syntax.html">
+            
+                    
+                    Effect Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../../material-system/pass-parameter-list.html">
+            
+                <a href="../../material-system/pass-parameter-list.html">
+            
+                    
+                    Pass Params
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../../material-system/builtin-shader-uniforms.html">
+            
+                <a href="../../material-system/builtin-shader-uniforms.html">
+            
+                    
+                    Builtin Shader Uniforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../../audio-system/overview.html">
+            
+                <a href="../../audio-system/overview.html">
+            
+                    
+                    声音
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../../particle-system/overview.html">
+            
+                <a href="../../particle-system/overview.html">
+            
+                    
+                    粒子
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../../particle-system/module.html">
+            
+                <a href="../../particle-system/module.html">
+            
+                    
+                    粒子系统模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../../particle-system/main-module.html">
+            
+                <a href="../../particle-system/main-module.html">
+            
+                    
+                    主模块(ParticleSystemComponent)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../../particle-system/emitter.html">
+            
+                <a href="../../particle-system/emitter.html">
+            
+                    
+                    发射器模块(ShapeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../../particle-system/color-module.html">
+            
+                <a href="../../particle-system/color-module.html">
+            
+                    
+                    颜色模块(ColorOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../../particle-system/size-module.html">
+            
+                <a href="../../particle-system/size-module.html">
+            
+                    
+                    大小模块(SizeOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../../particle-system/rotation-module.html">
+            
+                <a href="../../particle-system/rotation-module.html">
+            
+                    
+                    旋转模块(RotationOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="../../particle-system/velocity-module.html">
+            
+                <a href="../../particle-system/velocity-module.html">
+            
+                    
+                    速度模块(VelocityOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.8" data-path="../../particle-system/limit-velocity-module.html">
+            
+                <a href="../../particle-system/limit-velocity-module.html">
+            
+                    
+                    限速模块(LimitVelocityOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.9" data-path="../../particle-system/force-module.html">
+            
+                <a href="../../particle-system/force-module.html">
+            
+                    
+                    加速度模块(ForceOvertimeModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.10" data-path="../../particle-system/texture-animation-module.html">
+            
+                <a href="../../particle-system/texture-animation-module.html">
+            
+                    
+                    贴图动画模块(TextureAnimationModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.11" data-path="../../particle-system/renderer.html">
+            
+                <a href="../../particle-system/renderer.html">
+            
+                    
+                    渲染模块(Renderer)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.12" data-path="../../particle-system/trail-module.html">
+            
+                <a href="../../particle-system/trail-module.html">
+            
+                    
+                    拖尾模块(TrailModule)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../../engine/animation/">
+            
+                <a href="../../engine/animation/">
+            
+                    
+                    动画
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../../engine/animation/animation-component.html">
+            
+                <a href="../../engine/animation/animation-component.html">
+            
+                    
+                    动画组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="../../engine/animation/animation-clip.html">
+            
+                <a href="../../engine/animation/animation-clip.html">
+            
+                    
+                    动画剪辑
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="../../engine/animation/skeletal-animation.html">
+            
+                <a href="../../engine/animation/skeletal-animation.html">
+            
+                    
+                    骨骼动画
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../../tween/">
+            
+                <a href="../../tween/">
+            
+                    
+                    缓动
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../../physics/physics.html">
+            
+                <a href="../../physics/physics.html">
+            
+                    
+                    物理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../../physics/physics-item.html">
+            
+                <a href="../../physics/physics-item.html">
+            
+                    
+                    物理选项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="../../physics/physics-system.html">
+            
+                <a href="../../physics/physics-system.html">
+            
+                    
+                    物理系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="../../physics/physics-component.html">
+            
+                <a href="../../physics/physics-component.html">
+            
+                    
+                    物理组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.4" data-path="../../physics/physics-use.html">
+            
+                <a href="../../physics/physics-use.html">
+            
+                    
+                    使用物理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.5" data-path="../../physics/physics-collider.html">
+            
+                <a href="../../physics/physics-collider.html">
+            
+                    
+                    使用碰撞器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.6" data-path="../../physics/physics-material.html">
+            
+                <a href="../../physics/physics-material.html">
+            
+                    
+                    物理材质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.7" data-path="../../physics/physics-rigidbody.html">
+            
+                <a href="../../physics/physics-rigidbody.html">
+            
+                    
+                    使用刚体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.8" data-path="../../physics/physics-event.html">
+            
+                <a href="../../physics/physics-event.html">
+            
+                    
+                    物理事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.9" data-path="../../physics/physics-group-mask.html">
+            
+                <a href="../../physics/physics-group-mask.html">
+            
+                    
+                    分组和掩码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.10" data-path="../../physics/physics-raycast.html">
+            
+                <a href="../../physics/physics-raycast.html">
+            
+                    
+                    射线检测
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../../ui-system/components/engine/">
+            
+                <a href="../../ui-system/components/engine/">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="../../ui-system/components/engine/priority.html">
+            
+                <a href="../../ui-system/components/engine/priority.html">
+            
+                    
+                    渲染排序规则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.2" data-path="../../ui-system/components/engine/ui-batch.html">
+            
+                <a href="../../ui-system/components/engine/ui-batch.html">
+            
+                    
+                    UI 合批说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.3" data-path="../../ui-system/components/engine/multi-resolution.html">
+            
+                <a href="../../ui-system/components/engine/multi-resolution.html">
+            
+                    
+                    多分辨率适配方案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.4" data-path="../../ui-system/components/engine/widget-align.html">
+            
+                <a href="../../ui-system/components/engine/widget-align.html">
+            
+                    
+                    对齐策略
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.5" data-path="../../ui-system/components/engine/label-layout.html">
+            
+                <a href="../../ui-system/components/engine/label-layout.html">
+            
+                    
+                    文字排版
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.6" data-path="../../ui-system/components/engine/auto-layout.html">
+            
+                <a href="../../ui-system/components/engine/auto-layout.html">
+            
+                    
+                    自动布局容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.7" data-path="../../ui-system/components/engine/list-with-data.html">
+            
+                <a href="../../ui-system/components/engine/list-with-data.html">
+            
+                    
+                    制作动态生成内容的列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.8" data-path="../../ui-system/components/engine/sliced-sprite.html">
+            
+                <a href="../../ui-system/components/engine/sliced-sprite.html">
+            
+                    
+                    制作可任意拉伸的 UI 图像
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../components/">
+            
+                <a href="../components/">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.1" data-path="../../audio-system/overview.html">
+            
+                <a href="../../audio-system/overview.html">
+            
+                    
+                    AudioSourceComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.2" data-path="../../engine/renderable/model-component.html">
+            
+                <a href="../../engine/renderable/model-component.html">
+            
+                    
+                    ModelComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.3" data-path="../../engine/animation/skeletal-animation.html">
+            
+                <a href="../../engine/animation/skeletal-animation.html">
+            
+                    
+                    SkinningModelComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.4" data-path="../components/camera-component.html">
+            
+                <a href="../components/camera-component.html">
+            
+                    
+                    CameraComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.5" data-path="../../concepts/scene/light/dir-light.html">
+            
+                <a href="../../concepts/scene/light/dir-light.html">
+            
+                    
+                    DirectionalLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.6" data-path="../../concepts/scene/light/sphere-light.html">
+            
+                <a href="../../concepts/scene/light/sphere-light.html">
+            
+                    
+                    SphereLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.7" data-path="../../concepts/scene/light/spot-light.html">
+            
+                <a href="../../concepts/scene/light/spot-light.html">
+            
+                    
+                    SpotLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.8" data-path="../../engine/animation/animation-component.html">
+            
+                <a href="../../engine/animation/animation-component.html">
+            
+                    
+                    AnimationComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.9" data-path="../../particle-system/billboard-component.html">
+            
+                <a href="../../particle-system/billboard-component.html">
+            
+                    
+                    BillboardComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.10" data-path="../../particle-system/line-component.html">
+            
+                <a href="../../particle-system/line-component.html">
+            
+                    
+                    LineComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.11" data-path="../../particle-system/main-module.html">
+            
+                <a href="../../particle-system/main-module.html">
+            
+                    
+                    ParticleSystemComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.12" data-path="../../physics/physics-component.html">
+            
+                <a href="../../physics/physics-component.html#盒碰撞器组件（boxcollidercomponent）">
+            
+                    
+                    BoxColliderComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.13" data-path="../../physics/physics-component.html">
+            
+                <a href="../../physics/physics-component.html#球碰撞器组件（spherecollidercomponent）">
+            
+                    
+                    SphereColliderComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.14" data-path="../../physics/physics-component.html">
+            
+                <a href="../../physics/physics-component.html#刚体组件">
+            
+                    
+                    RigidBodyComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15" data-path="../../ui-system/components/editor/">
+            
+                <a href="../../ui-system/components/editor/">
+            
+                    
+                    UI 组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.1" data-path="../../ui-system/components/editor/render-component.html">
+            
+                <a href="../../ui-system/components/editor/render-component.html">
+            
+                    
+                    UI 渲染组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.1.1" data-path="../../ui-system/components/editor/sprite.html">
+            
+                <a href="../../ui-system/components/editor/sprite.html">
+            
+                    
+                    Sprite 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.2" data-path="../../ui-system/components/editor/label.html">
+            
+                <a href="../../ui-system/components/editor/label.html">
+            
+                    
+                    Label 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.3" data-path="../../ui-system/components/editor/mask.html">
+            
+                <a href="../../ui-system/components/editor/mask.html">
+            
+                    
+                    Mask 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.4" data-path="../../ui-system/components/editor/graphics.html">
+            
+                <a href="../../ui-system/components/editor/graphics.html">
+            
+                    
+                    Graphics 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.5" data-path="../../ui-system/components/editor/richtext.html">
+            
+                <a href="../../ui-system/components/editor/richtext.html">
+            
+                    
+                    RichText 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.6" data-path="../../ui-system/components/editor/ui-static.html">
+            
+                <a href="../../ui-system/components/editor/ui-static.html">
+            
+                    
+                    UIStaticBatch 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2" data-path="../../ui-system/components/editor/base-component.html">
+            
+                <a href="../../ui-system/components/editor/base-component.html">
+            
+                    
+                    UI 基础组件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.2.1" data-path="../../ui-system/components/editor/canvas.html">
+            
+                <a href="../../ui-system/components/editor/canvas.html">
+            
+                    
+                    Canvas 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.2" data-path="../../ui-system/components/editor/ui-transform.html">
+            
+                <a href="../../ui-system/components/editor/ui-transform.html">
+            
+                    
+                    UITransform 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.3" data-path="../../ui-system/components/editor/widget.html">
+            
+                <a href="../../ui-system/components/editor/widget.html">
+            
+                    
+                    Widget 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.4" data-path="../../ui-system/components/editor/button.html">
+            
+                <a href="../../ui-system/components/editor/button.html">
+            
+                    
+                    Button 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.5" data-path="../../ui-system/components/editor/layout.html">
+            
+                <a href="../../ui-system/components/editor/layout.html">
+            
+                    
+                    Layout 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.6" data-path="../../ui-system/components/editor/editbox.html">
+            
+                <a href="../../ui-system/components/editor/editbox.html">
+            
+                    
+                    EditBox 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.7" data-path="../../ui-system/components/editor/scrollview.html">
+            
+                <a href="../../ui-system/components/editor/scrollview.html">
+            
+                    
+                    ScrollView 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.8" data-path="../../ui-system/components/editor/scrollbar.html">
+            
+                <a href="../../ui-system/components/editor/scrollbar.html">
+            
+                    
+                    ScrollBar 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.9" data-path="../../ui-system/components/editor/progress.html">
+            
+                <a href="../../ui-system/components/editor/progress.html">
+            
+                    
+                    ProgressBar 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.10" data-path="../../ui-system/components/editor/label-outline.html">
+            
+                <a href="../../ui-system/components/editor/label-outline.html">
+            
+                    
+                    LabelOutline 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.11" data-path="../../ui-system/components/editor/toggle.html">
+            
+                <a href="../../ui-system/components/editor/toggle.html">
+            
+                    
+                    Toggle 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.12" data-path="../../ui-system/components/editor/toggleContainer.html">
+            
+                <a href="../../ui-system/components/editor/toggleContainer.html">
+            
+                    
+                    ToggleContainer 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.13" data-path="../../ui-system/components/editor/slider.html">
+            
+                <a href="../../ui-system/components/editor/slider.html">
+            
+                    
+                    Slider 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.14" data-path="../../ui-system/components/editor/pageview.html">
+            
+                <a href="../../ui-system/components/editor/pageview.html">
+            
+                    
+                    PageView 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.15" data-path="../../ui-system/components/editor/pageviewindicator.html">
+            
+                <a href="../../ui-system/components/editor/pageviewindicator.html">
+            
+                    
+                    PageViewIndicator 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.16" data-path="../../ui-system/components/editor/ui-model.html">
+            
+                <a href="../../ui-system/components/editor/ui-model.html">
+            
+                    
+                    UIModel 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.17" data-path="../../ui-system/components/editor/ui-coordinate-tracker.html">
+            
+                <a href="../../ui-system/components/editor/ui-coordinate-tracker.html">
+            
+                    
+                    UICoordinateTracker 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.18" data-path="../../ui-system/components/editor/ui-opacity.html">
+            
+                <a href="../../ui-system/components/editor/ui-opacity.html">
+            
+                    
+                    UIOpacity 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.19" data-path="../../ui-system/components/editor/block-input-enents.html">
+            
+                <a href="../../ui-system/components/editor/block-input-enents.html">
+            
+                    
+                    BlockInputEvents 组件参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="../../scripting/">
+            
+                <a href="../../scripting/">
+            
+                    
+                    脚本指南及事件机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.12.1" data-path="../../scripting/setup.html">
+            
+                <a href="../../scripting/setup.html">
+            
+                    
+                    脚本创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.2" data-path="../../scripting/basic.html">
+            
+                <a href="../../scripting/basic.html">
+            
+                    
+                    脚本基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.3" data-path="../../scripting/language-support.html">
+            
+                <a href="../../scripting/language-support.html">
+            
+                    
+                    语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.4" data-path="../../scripting/ccclass.html">
+            
+                <a href="../../scripting/ccclass.html">
+            
+                    
+                    ccclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.5" data-path="../../scripting/reference/attributes.html">
+            
+                <a href="../../scripting/reference/attributes.html">
+            
+                    
+                    属性参数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.6" data-path="../../scripting/access-node-component.html">
+            
+                <a href="../../scripting/access-node-component.html">
+            
+                    
+                    访问节点和其他组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.7" data-path="../../scripting/basic-node-api.html">
+            
+                <a href="../../scripting/basic-node-api.html">
+            
+                    
+                    常用节点和组件接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.8" data-path="../../scripting/life-cycle-callbacks.html">
+            
+                <a href="../../scripting/life-cycle-callbacks.html">
+            
+                    
+                    生命周期回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.9" data-path="../../scripting/create-destroy.html">
+            
+                <a href="../../scripting/create-destroy.html">
+            
+                    
+                    创建和销毁节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.10" data-path="../../scripting/scene-managing.html">
+            
+                <a href="../../scripting/scene-managing.html">
+            
+                    
+                    加载和切换场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.11" data-path="../../scripting/load-assets.html">
+            
+                <a href="../../scripting/load-assets.html">
+            
+                    
+                    获取和加载资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.12" data-path="../../scripting/scheduler.html">
+            
+                <a href="../../scripting/scheduler.html">
+            
+                    
+                    使用计时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.13" data-path="../../scripting/component.html">
+            
+                <a href="../../scripting/component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.14" data-path="../../scripting/execution-order-component.html">
+            
+                <a href="../../scripting/execution-order-component.html">
+            
+                    
+                    组件顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.15" data-path="../../engine/event/">
+            
+                <a href="../../engine/event/">
+            
+                    
+                    事件机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.16" data-path="../../scripting/plugin-scripts.md">
+            
+                <span>
+            
+                    
+                    插件脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.17" data-path="../../scripting/log.html">
+            
+                <a href="../../scripting/log.html">
+            
+                    
+                    添加 Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.18" data-path="../../scripting/deprecated.html">
+            
+                <a href="../../scripting/deprecated.html">
+            
+                    
+                    废弃 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../../asset/">
+            
+                <a href="../../asset/">
+            
+                    
+                    资源手册
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.1" data-path="../../asset/asset-workflow.html">
+            
+                <a href="../../asset/asset-workflow.html">
+            
+                    
+                    资源工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.2" data-path="../../asset/load-assets.html">
+            
+                <a href="../../asset/load-assets.html">
+            
+                    
+                    获取和加载资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.3" data-path="../../asset/subpackage.html">
+            
+                <a href="../../asset/subpackage.html">
+            
+                    
+                    分包加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.4" data-path="../../asset/scene.html">
+            
+                <a href="../../asset/scene.html">
+            
+                    
+                    场景资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5" data-path="../../asset/image.html">
+            
+                <a href="../../asset/image.html">
+            
+                    
+                    图像资源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.5.1" data-path="../../asset/texture.html">
+            
+                <a href="../../asset/texture.html">
+            
+                    
+                    纹理贴图资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.2" data-path="../../asset/sprite-frame.html">
+            
+                <a href="../../asset/sprite-frame.html">
+            
+                    
+                    精灵帧资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.3" data-path="../../concepts/scene/skybox.html">
+            
+                <a href="../../concepts/scene/skybox.html#cubemap">
+            
+                    
+                    立方体贴图资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.4" data-path="../../ui-system/components/engine/trim.html">
+            
+                <a href="../../ui-system/components/engine/trim.html">
+            
+                    
+                    图像资源的自动裁剪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.5" data-path="../../asset/compress-texture.html">
+            
+                <a href="../../asset/compress-texture.html">
+            
+                    
+                    压缩纹理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.6" data-path="../../asset/atlas.html">
+            
+                <a href="../../asset/atlas.html">
+            
+                    
+                    图集资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.7" data-path="../../asset/auto-atlas.html">
+            
+                <a href="../../asset/auto-atlas.html">
+            
+                    
+                    自动图集资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.8" data-path="../../asset/render-texture.html">
+            
+                <a href="../../asset/render-texture.html">
+            
+                    
+                    渲染纹理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.6" data-path="../../asset/prefab.html">
+            
+                <a href="../../asset/prefab.html">
+            
+                    
+                    预制资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.7" data-path="../../asset/script.html">
+            
+                <a href="../../asset/script.html">
+            
+                    
+                    脚本资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.8" data-path="../../asset/font.html">
+            
+                <a href="../../asset/font.html">
+            
+                    
+                    字体资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.9" data-path="../../asset/audio.html">
+            
+                <a href="../../asset/audio.html">
+            
+                    
+                    声音资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.10" data-path="../../asset/material.html">
+            
+                <a href="../../asset/material.html">
+            
+                    
+                    材质资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.11" data-path="../../asset/mesh.html">
+            
+                <a href="../../asset/mesh.html">
+            
+                    
+                    模型资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.12" data-path="../../asset/anim.html">
+            
+                <a href="../../asset/anim.html">
+            
+                    
+                    动画资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../../submit-pr/submit-pr.html">
+            
+                <a href="../../submit-pr/submit-pr.html">
+            
+                    
+                    向 Cocos 提交代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                    
+
+<div class="cocos-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://cocos.com" class="btn" target="_blank"><img src="https://forum.cocos.org/images/logo.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">English</a></li>
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos Creator</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator/manual/zh" class="btn">手册文档</a></li>
+            
+            <li><a href="https://docs.cocos.com/creator/api/zh" class="btn">API 参考</a></li>
+            
+        </ul>
+    </li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos Creator 3D</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator3d/manual/zh" class="btn">手册文档</a></li>
+            
+            <li><a href="https://docs.cocos.com/creator3d/api/zh" class="btn">API 参考</a></li>
+            
+        </ul>
+    </li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos2d-x</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/cocos2d-x/manual/zh" class="btn">手册文档</a></li>
+            
+            <li><a href="http://docs.cocos2d-x.org/api-ref/index.html" class="btn">API 参考</a></li>
+            
+        </ul>
+    </li>
+    
+
+
+    
+    <li class="version-link">
+        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">1.1</span></a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator3d/1.0/manual/zh" class="btn">Version: <span style="font-weight:bold">1.0</span></a></li>
+            
+            <li><a href="https://docs.cocos.com/creator3d/manual/zh" class="btn">Version: <span style="font-weight:bold">1.2</span></a></li>
+            
+        </ul>
+    </li>
+    
+
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >发布到原生平台</a>
+    </h1>
+</div>
+
+
+
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53D1;&#x5E03;&#x5230;&#x539F;&#x751F;&#x5E73;&#x53F0;">&#x53D1;&#x5E03;&#x5230;&#x539F;&#x751F;&#x5E73;&#x53F0;</h1>
+<p>Cocos Creator 3D &#x81EA; v1.0.3 &#x8D77;&#x6B63;&#x5F0F;&#x652F;&#x6301;&#x539F;&#x751F;&#x5E73;&#x53F0;&#xFF0C;&#x70B9;&#x51FB;&#x83DC;&#x5355;&#x680F;&#x7684; <strong>&#x9879;&#x76EE; -&gt; &#x6784;&#x5EFA;&#x53D1;&#x5E03;</strong> &#x9009;&#x9879;&#xFF0C;&#x6253;&#x5F00;&#x6784;&#x5EFA;&#x53D1;&#x5E03;&#x9762;&#x677F;&#xFF0C;&#x53C2;&#x7167;&#x6587;&#x6863;&#x914D;&#x7F6E;&#x5B8C;&#x9879;&#x76EE;&#x4FE1;&#x606F;&#x540E;&#x5373;&#x53EF;&#x6253;&#x5305;&#x3002;</p>
+<p>&#x652F;&#x6301;&#x7684;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x5305;&#x62EC; Android&#x3001;iOS&#x3001;Mac&#x3001;Windows &#x56DB;&#x4E2A;&#xFF0C;&#x5176;&#x4E2D; iOS&#x3001;Mac &#x548C; Windows &#x7684;&#x9009;&#x9879;&#x53EA;&#x80FD;&#x5728;&#x76F8;&#x5E94;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#x624D;&#x4F1A;&#x51FA;&#x73B0;&#xFF0C;&#x76EE;&#x524D;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x662F;&#x96C6;&#x5408;&#x5728;&#x4E00;&#x8D77;&#x6253;&#x5305;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x540C;&#x4E00;&#x754C;&#x9762;&#x4E0A;&#x914D;&#x7F6E;&#x5404;&#x4E2A;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x7684;&#x53C2;&#x6570;&#x9009;&#x9879;&#xFF0C;&#x6253;&#x5305;&#x4E00;&#x6B21;&#x5373;&#x53EF;&#x751F;&#x6210;&#x6240;&#x6709;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x7684;&#x9879;&#x76EE;&#x5305;&#x3002;</p>
+<h2 id="&#x73AF;&#x5883;&#x914D;&#x7F6E;">&#x73AF;&#x5883;&#x914D;&#x7F6E;</h2>
+<p>&#x53D1;&#x5E03;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x9700;&#x8981;&#x914D;&#x7F6E;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x7684;&#x73AF;&#x5883;&#xFF0C;&#x8BE6;&#x60C5;&#x8BF7;&#x53C2;&#x8003; <a href="setup-native-development.html">&#x539F;&#x751F;&#x73AF;&#x5883;&#x914D;&#x7F6E;</a>&#x3002;</p>
+<h2 id="&#x6784;&#x5EFA;&#x9009;&#x9879;">&#x6784;&#x5EFA;&#x9009;&#x9879;</h2>
+<p>&#x4E00;&#x4E9B;&#x901A;&#x7528;&#x6784;&#x5EFA;&#x53C2;&#x6570;&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x8BF7;&#x53C2;&#x7167; <a href="build-options.html">&#x901A;&#x7528;&#x6784;&#x5EFA;&#x53C2;&#x6570;&#x4ECB;&#x7ECD;</a>&#x3002;</p>
+<p><img src="publish-native/native_platform.jpg" alt="native platform"></p>
+<p>&#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x4E00;&#x4E9B;&#x5E73;&#x53F0;&#x7279;&#x6709;&#x4EE5;&#x53CA;&#x901A;&#x7528;&#x9009;&#x9879;&#x5185;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x70B9;&#xFF1A;</p>
+<h3 id="md5-cache">MD5 Cache</h3>
+<p>&#x4F5C;&#x4E3A;&#x901A;&#x7528;&#x9009;&#x9879;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7ED9;&#x6784;&#x5EFA;&#x540E;&#x7684;&#x6240;&#x6709;&#x8D44;&#x6E90;&#x6587;&#x4EF6;&#x540D;&#x5C06;&#x52A0;&#x4E0A; MD5 &#x4FE1;&#x606F;&#xFF0C;&#x89E3;&#x51B3;&#x70ED;&#x66F4;&#x65B0;&#x65F6;&#x7684; CDN &#x8D44;&#x6E90;&#x7F13;&#x5B58;&#x95EE;&#x9898;&#x3002;
+&#x542F;&#x7528;&#x540E;&#xFF0C;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x8D44;&#x6E90;&#x52A0;&#x8F7D;&#x4E0D;&#x4E86;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x8BF4;&#x660E;&#x627E;&#x4E0D;&#x5230;&#x91CD;&#x547D;&#x540D;&#x540E;&#x7684;&#x65B0;&#x6587;&#x4EF6;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x662F;&#x56E0;&#x4E3A;&#x6709;&#x4E9B; C++ &#x4E2D;&#x7528;&#x5230;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x8D44;&#x6E90;&#x6CA1;&#x901A;&#x8FC7; cc.loader &#x52A0;&#x8F7D;&#x5F15;&#x8D77;&#x7684;&#x3002;&#x8FD9;&#x65F6;&#x53EF;&#x4EE5;&#x5728;&#x52A0;&#x8F7D;&#x524D;&#x5148;&#x7528;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#x8F6C;&#x6362; url &#xFF0C;&#x8F6C;&#x6362;&#x540E;&#x7684;&#x8DEF;&#x5F84;&#x5C31;&#x80FD;&#x6B63;&#x786E;&#x52A0;&#x8F7D;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-keyword">auto</span> cx = ScriptingCore::getInstance()-&gt;getGlobalContext();
+JS::<span class="hljs-function">RootedValue <span class="hljs-title">returnParam</span><span class="hljs-params">(cx)</span></span>;
+ScriptingCore::getInstance()-&gt;evalString(<span class="hljs-string">&quot;cc.loader.md5Pipe.transformURL(&apos;url&apos;)&quot;</span>, &amp;returnParam);
+
+<span class="hljs-built_in">string</span> url;
+jsval_to_string(cx, returnParam, &amp;url);
+</code></pre>
+<h3 id="native-&#x9009;&#x9879;">Native &#x9009;&#x9879;</h3>
+<p>&#x7531;&#x4E8E;&#x76EE;&#x524D;&#x6784;&#x5EFA;&#x673A;&#x5236;&#x4E0A;&#x7684;&#x8C03;&#x6574;&#xFF0C;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x7684;&#x5904;&#x7406;&#x5747;&#x4EE5;&#x63D2;&#x4EF6;&#x7684;&#x5F62;&#x5F0F;&#x6CE8;&#x5165;&#xFF0C;&#x5728;&#x9009;&#x62E9;&#x5B8C;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x540E;&#xFF0C;&#x5C06;&#x4F1A;&#x770B;&#x5230;&#x9664;&#x4E86;&#x539F;&#x751F;&#x5177;&#x4F53;&#x5E73;&#x53F0;&#x7684;&#x9009;&#x9879;&#x5916;&#x8FD8;&#x6709; <code>native</code> &#x7684;&#x9009;&#x9879;&#xFF0C;native &#x76F8;&#x5173;&#x9009;&#x9879;&#x914D;&#x7F6E;&#x540E;&#x5C06;&#x4F1A;&#x5F71;&#x54CD;&#x5230;&#x6240;&#x6709;&#x7684;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x3002;</p>
+<p><img src="publish-native/native_options.jpg" alt="Native &#x9009;&#x9879;"></p>
+<h4 id="&#x9009;&#x62E9;&#x6E90;&#x7801;&#x6A21;&#x677F;&#xFF08;template&#xFF09;">&#x9009;&#x62E9;&#x6E90;&#x7801;&#x6A21;&#x677F;&#xFF08;Template&#xFF09;</h4>
+<p>&#x5728; native &#x9009;&#x9879;&#x7684; <strong>&#x6A21;&#x677F; (Template)</strong> &#x4E0B;&#x62C9;&#x83DC;&#x5355;&#x4E2D;&#x6709;&#x4E24;&#x79CD;&#x53EF;&#x7528;&#x7684;&#x5F15;&#x64CE;&#x6A21;&#x677F;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4ECE;&#x4E2D;&#x9009;&#x62E9;&#x4E00;&#x79CD;&#xFF1A;</p>
+<ul>
+<li>default&#xFF0C;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684; Cocos2d-x &#x6E90;&#x7801;&#x7248;&#x5F15;&#x64CE;&#x6784;&#x5EFA;&#x9879;&#x76EE;</li>
+<li>link&#xFF0C;&#x4E0E; default &#x6A21;&#x677F;&#x4E0D;&#x540C;&#x7684;&#x662F;&#xFF0C;link &#x6A21;&#x677F;&#x4E0D;&#x4F1A;&#x62F7;&#x8D1D; Cocos2d-x &#x6E90;&#x7801;&#x5230;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x5171;&#x4EAB;&#x7684; Cocos2d-x &#x6E90;&#x7801;&#x3002;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x51CF;&#x5C11;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x5360;&#x7528;&#x7A7A;&#x95F4;&#xFF0C;&#x4EE5;&#x53CA;&#x5BF9; Cocos2d-x &#x6E90;&#x7801;&#x7684;&#x4FEE;&#x6539;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5171;&#x4EAB;&#x3002;</li>
+</ul>
+<p>&#x5173;&#x4E8E;&#x6E90;&#x7801;&#x5F15;&#x64CE;&#x7684;&#x6982;&#x5FF5;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x7167;&#x4E0B;&#x6587;&#xFF1A;</p>
+<blockquote>
+<p>Cocos2d-x &#x5F15;&#x64CE;&#x4E2D;&#x5305;&#x62EC;&#x6E90;&#x7801;&#x5F15;&#x64CE;&#x3002;&#x4ED6;&#x4EEC;&#x9002;&#x7528;&#x7684;&#x8303;&#x56F4;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x6E90;&#x7801;&#x5F15;&#x64CE;&#x521D;&#x6B21;&#x6784;&#x5EFA;&#x548C;&#x7F16;&#x8BD1;&#x67D0;&#x4E2A;&#x5DE5;&#x7A0B;&#x65F6;&#x9700;&#x8981;&#x5F88;&#x957F;&#x7684;&#x65F6;&#x95F4;&#x7F16;&#x8BD1; C++ &#x4EE3;&#x7801;&#xFF0C;&#x89C6;&#x7535;&#x8111;&#x914D;&#x7F6E;&#x800C;&#x5B9A;&#xFF0C;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x53EF;&#x80FD;&#x5728; 5~20 &#x5206;&#x949F;&#x3002;&#x5BF9;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x5DF2;&#x7ECF;&#x7F16;&#x8BD1;&#x8FC7;&#x4E00;&#x6B21;&#x4E4B;&#x540E;&#xFF0C;&#x4E0B;&#x6B21;&#x518D;&#x7F16;&#x8BD1;&#x9700;&#x8981;&#x7684;&#x65F6;&#x95F4;&#x4F1A;&#x5927;&#x5927;&#x7F29;&#x77ED;&#x3002;</li>
+<li>&#x6E90;&#x7801;&#x5F15;&#x64CE;&#x6784;&#x5EFA;&#x51FA;&#x7684;&#x5DE5;&#x7A0B;&#xFF0C;&#x4F7F;&#x7528;&#x539F;&#x751F;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x7F16;&#x8BD1;&#x548C;&#x8FD0;&#x884C;&#xFF08;&#x5982; Android Studio&#x3001;Xcode &#x7B49; IDE&#xFF09;&#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x8C03;&#x8BD5;&#x548C;&#x9519;&#x8BEF;&#x6355;&#x83B7;&#x7684;&#x3002;</li>
+</ul>
+</blockquote>
+<p>&#x76EE;&#x524D; Cocos Creator 3D &#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x5DF2;&#x7ECF;&#x5305;&#x542B;&#x4E86;&#x81EA;&#x5E26;&#x7684; Cocos2d-x &#x6E90;&#x7801;&#x5F15;&#x64CE;&#xFF0C;&#x5728;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#x4E0B;&#x7684; resources/3d/cocos2d-x-lite &#x6587;&#x4EF6;&#x5939;&#x5185;&#x53EF;&#x4EE5;&#x67E5;&#x770B;&#x5230;&#x3002;</p>
+<h4 id="polyfills">Polyfills</h4>
+<p>&#x8FD9;&#x91CC;&#x662F;&#x811A;&#x672C;&#x7CFB;&#x7EDF;&#x652F;&#x6301;&#x7684;&#x4E00;&#x4E9B;&#x65B0;&#x7279;&#x6027;&#x7684; polyfills &#x9009;&#x9879;&#xFF0C;&#x52FE;&#x9009;&#x540E;&#x751F;&#x6210;&#x7684;&#x9879;&#x76EE;&#x4F1A;&#x5E26;&#x4E0A;&#x5BF9;&#x5E94;&#x7684; polyfills &#x4E5F;&#x5C31;&#x662F;&#x4F1A;&#x589E;&#x5927;&#x5305;&#x4F53;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x9700;&#x6C42;&#x9009;&#x62E9;&#x9700;&#x8981;&#x7684; polyfills, &#x8FD9;&#x7EC4;&#x9009;&#x9879;&#x6682;&#x65F6;&#x53EA;&#x6709;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF0C;&#x540E;&#x7EED;&#x5C06;&#x4F1A;&#x5F00;&#x653E;&#x66F4;&#x591A;&#x529F;&#x80FD;&#x3002;</p>
+<h3 id="android-&#x5E73;&#x53F0;&#x9009;&#x9879;">Android &#x5E73;&#x53F0;&#x9009;&#x9879;</h3>
+<p><img src="publish-native/android_options.png" alt="Android &#x5E73;&#x53F0;&#x9009;&#x9879;"></p>
+<h4 id="&#x8BBE;&#x7F6E;&#x5305;&#x540D;&#xFF08;package-name&#xFF09;">&#x8BBE;&#x7F6E;&#x5305;&#x540D;&#xFF08;Package Name&#xFF09;</h4>
+<p>&#xFF08;&#x4E5F;&#x79F0;&#x4F5C; Package Name &#x6216; Bundle Identifier&#xFF09;&#xFF0C;&#x901A;&#x5E38;&#x4EE5;&#x4EA7;&#x54C1;&#x7F51;&#x7AD9; url &#x5012;&#x5E8F;&#x6392;&#x5217;&#xFF0C;&#x5982; <code>com.mycompany.myproduct</code>&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5305;&#x540D;&#x4E2D;&#x53EA;&#x80FD;&#x5305;&#x542B;&#x6570;&#x5B57;&#x3001;&#x5B57;&#x6BCD;&#x548C;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x6B64;&#x5916;&#x5305;&#x540D;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x5206;&#x5FC5;&#x987B;&#x4EE5;&#x5B57;&#x6BCD;&#x5F00;&#x5934;&#xFF0C;&#x4E0D;&#x80FD;&#x4EE5;&#x4E0B;&#x5212;&#x7EBF;&#x6216;&#x6570;&#x5B57;&#x5F00;&#x5934;&#x3002;</p>
+<h4 id="target-api-level">Target API Level</h4>
+<p>&#x8BBE;&#x7F6E;&#x7F16;&#x8BD1; Android &#x5E73;&#x53F0;&#x6240;&#x9700;&#x7684; Target API Level&#x3002;&#x70B9;&#x51FB;&#x65C1;&#x8FB9;&#x7684; <code>Set Android SDK</code> &#x6309;&#x94AE;&#x5373;&#x53EF;&#x5FEB;&#x901F;&#x8DF3;&#x8F6C;&#x5230;&#x914D;&#x7F6E;&#x9875;&#xFF0C;&#x5177;&#x4F53;&#x914D;&#x7F6E;&#x8BF7;&#x53C2;&#x8003; <a href="setup-native-development.html">&#x539F;&#x751F;&#x73AF;&#x5883;&#x914D;&#x7F6E;</a>&#x3002;</p>
+<h4 id="app-abi">APP ABI</h4>
+<p>&#x8BBE;&#x7F6E; Android &#x9700;&#x8981;&#x652F;&#x6301;&#x7684; CPU &#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x9009;&#x9879;&#xFF0C;&#x5206;&#x522B;&#x6709; <strong>armeabi-v7a</strong>&#x3001;<strong>arm64-v8a</strong>&#x3001;<strong>x86</strong> &#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;</p>
+<ul>
+<li><p>&#x5F53;&#x4F60;&#x9009;&#x62E9;&#x4E00;&#x4E2A; ABI &#x6784;&#x5EFA;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x4E0D; Clean &#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6784;&#x5EFA;&#x53E6;&#x5916;&#x4E00;&#x4E2A; ABI&#xFF0C;&#x6B64;&#x65F6;&#x4E24;&#x4E2A; ABI &#x7684; so &#x90FD;&#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5230; apk &#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F; Android Studio &#x9ED8;&#x8BA4;&#x7684;&#x884C;&#x4E3A;&#x3002;&#x82E5;&#x7528; Android Studio &#x5BFC;&#x5165;&#x5DE5;&#x7A0B;&#xFF0C;&#x9009;&#x62E9;&#x4E00;&#x4E2A; ABI &#x6784;&#x5EFA;&#x5B8C;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5148;&#x6267;&#x884C;&#x4E00;&#x4E0B; <strong>Build -&gt; Clean Project</strong> &#x518D;&#x6784;&#x5EFA;&#x53E6;&#x5916;&#x4E00;&#x4E2A; ABI&#xFF0C;&#x6B64;&#x65F6;&#x53EA;&#x6709;&#x540E;&#x9762;&#x90A3;&#x4E2A; ABI &#x4F1A;&#x88AB;&#x6253;&#x5305;&#x5230; apk &#x4E2D;&#x3002;</p>
+</li>
+<li><p>&#x9879;&#x76EE;&#x5DE5;&#x7A0B;&#x7528; Android Studio &#x5BFC;&#x5165;&#x540E;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x6784;&#x5EFA;&#x9762;&#x677F;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x4FEE;&#x6539; ABI&#xFF0C;&#x76F4;&#x63A5;&#x4FEE;&#x6539; <strong>gradle.properties</strong> &#x4E2D;&#x7684; <strong>PROP_APP_ABI</strong> &#x5C5E;&#x6027;&#x5373;&#x53EF;&#x3002;</p>
+<p>  <img src="publish-native/modify_abi.png" alt="modify abi"></p>
+</li>
+</ul>
+<h4 id="&#x5BC6;&#x94A5;&#x5E93;">&#x5BC6;&#x94A5;&#x5E93;</h4>
+<p>Android &#x8981;&#x6C42;&#x6240;&#x6709; APK &#x5FC5;&#x987B;&#x5148;&#x4F7F;&#x7528;&#x8BC1;&#x4E66;&#x8FDB;&#x884C;&#x6570;&#x5B57;&#x7B7E;&#x7F72;&#xFF0C;&#x7136;&#x540E;&#x624D;&#x80FD;&#x5B89;&#x88C5;&#x3002;Cocos Creator 3D &#x63D0;&#x4F9B;&#x4E86;&#x9ED8;&#x8BA4;&#x7684;&#x5BC6;&#x94A5;&#x5E93;&#xFF0C;&#x52FE;&#x9009; <strong>&#x4F7F;&#x7528;&#x8C03;&#x8BD5;&#x5BC6;&#x94A5;&#x5E93;</strong> &#x5C31;&#x662F;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x5BC6;&#x94A5;&#x5E93;&#xFF0C;&#x82E5;&#x7528;&#x6237;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x5BC6;&#x94A5;&#x5E93;&#x53EF;&#x53BB;&#x6389; <strong>&#x4F7F;&#x7528;&#x8C03;&#x8BD5;&#x5BC6;&#x94A5;&#x5E93;</strong> &#x52FE;&#x9009;&#x3002;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003; <a href="https://developer.android.google.cn/studio/publish/app-signing?hl=zh-cn" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a></p>
+<h4 id="orientation-&#x5C4F;&#x5E55;&#x65B9;&#x5411;">Orientation &#x5C4F;&#x5E55;&#x65B9;&#x5411;</h4>
+<ul>
+<li>portrait: &#x5C4F;&#x5E55;&#x76F4;&#x7ACB;&#xFF0C;home &#x952E;&#x5728;&#x4E0B;</li>
+<li>landscapeLeft: &#x5C4F;&#x5E55;&#x5411;&#x5DE6;&#x6A6B;&#x7F6E;&#xFF0C;home &#x952E;&#x5728;&#x5C4F;&#x5E55;&#x5DE6;&#x4FA7;&#x7684;&#x6A2A;&#x5C4F;</li>
+<li>landscapeRight: &#x5C4F;&#x5E55;&#x5411;&#x53F3;&#x6A6B;&#x7F6E;&#xFF0C;home &#x952E;&#x5728;&#x5C4F;&#x5E55;&#x53F3;&#x4FA7;&#x7684;&#x6A2A;&#x5C4F;</li>
+</ul>
+<h4 id="&#x751F;&#x6210;-app-bundle-google-play">&#x751F;&#x6210; App Bundle (Google Play)</h4>
+<p>&#x52FE;&#x9009;&#x8BE5;&#x9879;&#x5373;&#x53EF;&#x5C06;&#x6E38;&#x620F;&#x6253;&#x5305;&#x6210; App Bundle &#x683C;&#x5F0F;&#x7528;&#x4E8E;&#x4E0A;&#x4F20;&#x5230; Google Play &#x5546;&#x5E97;&#x3002;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x8003; <a href="https://developer.android.google.cn/guide/app-bundle/" target="_blank">&#x5B98;&#x65B9;&#x6587;&#x6863;</a> &#x3002;</p>
+<h3 id="mac-&#x5E73;&#x53F0;&#x9009;&#x9879;">Mac &#x5E73;&#x53F0;&#x9009;&#x9879;</h3>
+<p><img src="publish-native/mac_options.png" alt="Mac &#x5E73;&#x53F0;&#x9009;&#x9879;"></p>
+<h4 id="bundle-identifier-&#x5305;&#x540D;">Bundle Identifier &#x5305;&#x540D;</h4>
+<p>&#x53C2;&#x89C1; Android Package Name &#x9009;&#x9879;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h3 id="ios-&#x5E73;&#x53F0;&#x9009;&#x9879;">iOS &#x5E73;&#x53F0;&#x9009;&#x9879;</h3>
+<p><img src="publish-native/ios_options.png" alt="iOS &#x5E73;&#x53F0;&#x9009;&#x9879;"></p>
+<h4 id="bundle-identifier-&#x5305;&#x540D;">Bundle Identifier &#x5305;&#x540D;</h4>
+<p>&#x53C2;&#x89C1; Android Package Name &#x9009;&#x9879;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h4 id="orientation-&#x5C4F;&#x5E55;&#x65B9;&#x5411;">Orientation &#x5C4F;&#x5E55;&#x65B9;&#x5411;</h4>
+<p>&#x53C2;&#x89C1; Android Orientation &#x9009;&#x9879;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h2 id="&#x6784;&#x5EFA;&#x7F16;&#x8BD1;&#x539F;&#x751F;&#x5DE5;&#x7A0B;">&#x6784;&#x5EFA;&#x7F16;&#x8BD1;&#x539F;&#x751F;&#x5DE5;&#x7A0B;</h2>
+<p>&#x9009;&#x62E9;&#x53D1;&#x5E03;&#x5E73;&#x53F0;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E86;&#x521D;&#x59CB;&#x573A;&#x666F;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x5E73;&#x53F0;&#x914D;&#x7F6E;&#x9879;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F00;&#x59CB;&#x6784;&#x5EFA;&#x4E86;&#xFF0C;&#x70B9;&#x51FB;&#x53F3;&#x4E0B;&#x89D2;&#x7684; <code>&#x6784;&#x5EFA;</code> &#x6309;&#x94AE;&#xFF0C;&#x5F00;&#x59CB;&#x6784;&#x5EFA;&#x6D41;&#x7A0B;&#x3002;</p>
+<p>&#x6784;&#x5EFA;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5F97;&#x5230;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684; Cocos2d-x &#x5DE5;&#x7A0B;&#xFF0C;&#x548C;&#x4F7F;&#x7528; Cocos Console &#x65B0;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;&#x6709;&#x540C;&#x6837;&#x7684;&#x7ED3;&#x6784;&#x3002;&#x70B9;&#x51FB;&#x53D1;&#x5E03;&#x8DEF;&#x5F84;&#x65C1;&#x8FB9;&#x7684; <strong>&#x6253;&#x5F00;</strong> &#x6309;&#x94AE;&#xFF0C;&#x5C31;&#x4F1A;&#x5728;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x5668;&#x4E2D;&#x6253;&#x5F00;&#x6784;&#x5EFA;&#x53D1;&#x5E03;&#x8DEF;&#x5F84;&#xFF0C;&#x4F8B;&#x5982; <code>build/native</code>&#xFF0C;&#x5C55;&#x5F00;&#x76EE;&#x5F55;&#x81F3;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x91CC;&#x9762;&#x5C31;&#x5305;&#x542B;&#x4E86;&#x6240;&#x6709;&#x539F;&#x751F;&#x6784;&#x5EFA;&#x5DE5;&#x7A0B;&#x3002;&#x76EE;&#x524D;&#x7F16;&#x8F91;&#x5668;&#x5C1A;&#x672A;&#x96C6;&#x6210;&#x7F16;&#x8BD1;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x624B;&#x52A8;&#x5728;&#x76F8;&#x5E94;&#x5E73;&#x53F0;&#x7684; IDE &#xFF08;&#x5982; Xcode&#x3001;Android Studio&#x3001;Visual Studio&#xFF09;&#x4E2D;&#x6253;&#x5F00;&#x6784;&#x5EFA;&#x597D;&#x7684;&#x539F;&#x751F;&#x5DE5;&#x7A0B;&#xFF0C;&#x8FDB;&#x884C;&#x8FDB;&#x4E00;&#x6B65;&#x7684;&#x9884;&#x89C8;&#x3001;&#x8C03;&#x8BD5;&#x548C;&#x53D1;&#x5E03;&#x3002;</p>
+<p><img src="publish-native/native_projects.png" alt="native projects"></p>
+<p>&#x56FE;&#x4E2D;&#x7EA2;&#x6846;&#x6240;&#x793A;&#x7684;&#x5C31;&#x662F;&#x4E0D;&#x540C;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x7684;&#x5DE5;&#x7A0B;&#xFF0C;&#x4E0B;&#x9762;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#x4E00;&#x4E0B;&#x5404;&#x4E2A;&#x5E73;&#x53F0;&#x7684;&#x624B;&#x52A8;&#x7F16;&#x8BD1;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li><p>iOS &#x5E73;&#x53F0;&#xFF1A;&#x4F7F;&#x7528; Xcode &#x6253;&#x5F00;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>native\frameworks\runtime-src\proj.ios_mac\.xcodeproj</code> &#x6587;&#x4EF6;&#xFF0C;&#x5728; Xcode &#x9762;&#x677F; <code>General -&gt; Signing</code> &#x4E2D;&#x8BBE;&#x7F6E;&#x7B7E;&#x540D;&#xFF0C;&#x5728; Xcode &#x5DE6;&#x4E0A;&#x65B9;&#x9009;&#x62E9;&#x8FDE;&#x63A5;&#x7684;&#x8BBE;&#x5907;&#x540E;&#x70B9;&#x51FB;&#x7F16;&#x8BD1;&#x6309;&#x94AE;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;</p>
+</li>
+<li><p>Android &#x5E73;&#x53F0;&#xFF1A;&#x4F7F;&#x7528; Android Studio &#x6253;&#x5F00;&#x5DE5;&#x7A0B;&#xFF0C;&#x5982;&#x7248;&#x672C;&#x5347;&#x7EA7;&#x6839;&#x636E;&#x63D0;&#x793A;&#x4E0B;&#x8F7D;&#x7F3A;&#x5931;&#x7684;&#x5DE5;&#x5177;&#x5373;&#x53EF;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;</p>
+</li>
+<li><p>Mac &#x5E73;&#x53F0;&#xFF1A;&#x4F7F;&#x7528; Xcode &#x6253;&#x5F00;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>native\frameworks\runtime-src\proj.ios_mac</code> &#x6587;&#x4EF6;&#x5939;&#x540E;&#x5373;&#x53EF;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;</p>
+</li>
+<li><p>Windows &#x5E73;&#x53F0;&#xFF1A;&#x4F7F;&#x7528; Visual Studio&#xFF08;&#x63A8;&#x8350;&#x4F7F;&#x7528; Visual Studio 2017&#xFF09;&#x6253;&#x5F00;&#x6784;&#x5EFA;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>native\frameworks\runtime-src\proj.win32\.sln</code> &#x6587;&#x4EF6;&#x6216;&#x8005;&#x76F4;&#x63A5;&#x53CC;&#x51FB;&#x8BE5;&#x6587;&#x4EF6;&#xFF0C;&#x5373;&#x53EF;&#x7F16;&#x8BD1;&#x8FD0;&#x884C;&#x3002;&#x5728;&#x5B89;&#x88C5; Visual Studio &#x65F6;&#xFF0C;&#x8BF7;&#x6CE8;&#x610F;&#x9700;&#x8981;&#x52FE;&#x9009;&#x5B89;&#x88C5; Windows 8.1 &#x7248;&#x672C; SDK&#x3002;</p>
+</li>
+</ul>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x5728; MIUI 10 &#x7CFB;&#x7EDF;&#x4E0A;&#x8FD0;&#x884C; debug &#x6A21;&#x5F0F;&#x6784;&#x5EFA;&#x7684;&#x5DE5;&#x7A0B;&#x53EF;&#x80FD;&#x4F1A;&#x5F39;&#x51FA; &#x201C;Detected problems with API compatibility&#x201D; &#x7684;&#x63D0;&#x793A;&#x6846;&#xFF0C;&#x8FD9;&#x662F; MIUI 10 &#x7CFB;&#x7EDF;&#x81EA;&#x8EAB;&#x5F15;&#x5165;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x4F7F;&#x7528; release &#x6A21;&#x5F0F;&#x6784;&#x5EFA;&#x5373;&#x53EF;&#x3002;</p>
+<hr>
+<p>&#x8981;&#x4E86;&#x89E3;&#x5982;&#x4F55;&#x5728;&#x539F;&#x751F;&#x5E73;&#x53F0;&#x4E0A;&#x8C03;&#x8BD5;&#xFF0C;&#x8BF7;&#x53C2;&#x8003; <a href="debug-jsb.html">&#x539F;&#x751F;&#x5E73;&#x53F0; JavaScript &#x8C03;&#x8BD5;</a>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="publish-web.html" class="navigation navigation-prev " aria-label="Previous page: 发布到 web 平台">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="setup-native-development.html" class="navigation navigation-next " aria-label="Next page: 安装配置原生环境">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"发布到原生平台","level":"2.7.4","depth":2,"next":{"title":"安装配置原生环境","level":"2.7.4.1","depth":3,"path":"editor/publish/setup-native-development.md","ref":"editor/publish/setup-native-development.md","articles":[]},"previous":{"title":"发布到 web 平台","level":"2.7.3","depth":2,"path":"editor/publish/publish-web.md","ref":"editor/publish/publish-web.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"手册文档","link":"https://docs.cocos.com/creator/manual/zh"},{"name":"API 参考","link":"https://docs.cocos.com/creator/api/zh"}]},{"name":"Cocos Creator 3D","links":[{"name":"手册文档","link":"https://docs.cocos.com/creator3d/manual/zh"},{"name":"API 参考","link":"https://docs.cocos.com/creator3d/api/zh"}]},{"name":"Cocos2d-x","links":[{"name":"手册文档","link":"https://docs.cocos.com/cocos2d-x/manual/zh"},{"name":"API 参考","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"1.1","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/zh"},{"name":"1.2","link":"https://docs.cocos.com/creator3d/manual/zh"}]}]},"language":"zh-hans","gitbook":"*"},"file":{"path":"editor/publish/publish-native.md","mtime":"2020-07-07T00:47:54.345Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T16:55:11.716Z"},"basePath":"../..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github-issue-feedback-language-custom/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

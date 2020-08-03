@@ -1,0 +1,706 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Creating a colored background · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="game_title.html" />
+    
+    
+    <link rel="prev" href="housekeeping.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://docs.cocos2d-x.org" class="btn" target="_blank"><img src="https://discuss.cocos2d-x.org/uploads/default/original/3X/6/d/6dfe036777dcaa0444e26ba1e092c7b97fc352d8.png" height="30" /></a></li>
+        <!--<li><a href="#" class="btn" onclick="toggleLanguage()">中文</a></li>-->
+        
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../01-getting-started/">
+            
+                <a href="../01-getting-started/">
+            
+                    
+                    Getting started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../01-getting-started/javascript-developers.html">
+            
+                <a href="../01-getting-started/javascript-developers.html">
+            
+                    
+                    JavaScript developers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../01-getting-started/cpp-developers.html">
+            
+                <a href="../01-getting-started/cpp-developers.html">
+            
+                    
+                    C++ developers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../02-starting-development/">
+            
+                <a href="../02-starting-development/">
+            
+                    
+                    Starting development
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../02-starting-development/drmario.html">
+            
+                <a href="../02-starting-development/drmario.html">
+            
+                    
+                    Dr. Mario introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../02-starting-development/design.html">
+            
+                <a href="../02-starting-development/design.html">
+            
+                    
+                    Designing this game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../02-starting-development/artwork.html">
+            
+                <a href="../02-starting-development/artwork.html">
+            
+                    
+                    Artwork
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../02-starting-development/creating_a_cocos_creator_project.html">
+            
+                <a href="../02-starting-development/creating_a_cocos_creator_project.html">
+            
+                    
+                    Creating a Cocos Creator project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../02-starting-development/end.html">
+            
+                <a href="../02-starting-development/end.html">
+            
+                    
+                    End Of Chapter Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Creating a menu screen
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="menu_scene.html">
+            
+                <a href="menu_scene.html">
+            
+                    
+                    Creating a scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="housekeeping.html">
+            
+                <a href="housekeeping.html">
+            
+                    
+                    UI housekeeping
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="background.html">
+            
+                <a href="background.html">
+            
+                    
+                    Creating a colored background
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="game_title.html">
+            
+                <a href="game_title.html">
+            
+                    
+                    Adding a game title
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="sprites.html">
+            
+                <a href="sprites.html">
+            
+                    
+                    Adding sprites
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="play_button.html">
+            
+                <a href="play_button.html">
+            
+                    
+                    Creating a play button
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="end.html">
+            
+                <a href="end.html">
+            
+                    
+                    End Of Chapter Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../04-creating-an-options-scene/">
+            
+                <a href="../04-creating-an-options-scene/">
+            
+                    
+                    Creating a game options screen
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../04-creating-an-options-scene/options_scene.html">
+            
+                <a href="../04-creating-an-options-scene/options_scene.html">
+            
+                    
+                    Lay out the scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../04-creating-an-options-scene/scene_calling_scene.html">
+            
+                <a href="../04-creating-an-options-scene/scene_calling_scene.html">
+            
+                    
+                    Scene Calling Another Scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../04-creating-an-options-scene/end.html">
+            
+                <a href="../04-creating-an-options-scene/end.html">
+            
+                    
+                    End Of Chapter Review
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../05-laying-out-gameplay-ui/">
+            
+                <a href="../05-laying-out-gameplay-ui/">
+            
+                    
+                    Laying out the game user interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../05-laying-out-gameplay-ui/quick_getting_started.html">
+            
+                <a href="../05-laying-out-gameplay-ui/quick_getting_started.html">
+            
+                    
+                    Getting started by a quick review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../05-laying-out-gameplay-ui/creating_the_rest_of_the_ui.html">
+            
+                <a href="../05-laying-out-gameplay-ui/creating_the_rest_of_the_ui.html">
+            
+                    
+                    Creating more of the game interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../05-laying-out-gameplay-ui/starting_to_code.html">
+            
+                <a href="../05-laying-out-gameplay-ui/starting_to_code.html">
+            
+                    
+                    Starting to code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../06-writing-game-logic/">
+            
+                <a href="../06-writing-game-logic/">
+            
+                    
+                    Writing the core game logic
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../06-writing-game-logic/what-logic-does-our-game-need.html">
+            
+                <a href="../06-writing-game-logic/what-logic-does-our-game-need.html">
+            
+                    
+                    What logic does our game need?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../06-writing-game-logic/populating-the-game-board.html">
+            
+                <a href="../06-writing-game-logic/populating-the-game-board.html">
+            
+                    
+                    Populating the game board
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="cocos-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://docs.cocos2d-x.org" class="btn" target="_blank"><img src="https://discuss.cocos2d-x.org/uploads/default/original/3X/6/d/6dfe036777dcaa0444e26ba1e092c7b97fc352d8.png" height="30" /></a></li>
+        <!--<li><a href="#" class="btn autohide" onclick="toggleLanguage()">中文</a></li>-->
+
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Creating a colored background</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="setting-a-colored-background">Setting a colored background</h2>
+<p>Unless you want a black background, the first step is to start building up the UI simulating a &quot;layered&quot; look. You might remember <code>Layer</code> objects from <strong>Cocos2d-x</strong>. However, in <strong>Cocos Creator</strong> <code>Layer</code> objects do not exist. Instead you can use a <code>Node</code> and set some <strong>properties</strong> to achieve the same concept as you could before with a <code>Layer</code> object.</p>
+<h3 id="creating-a-background-layer">Creating a background layer</h3>
+<ul>
+<li><p>In the <strong>Node tree</strong> panel, <strong>Right click</strong> on <strong>UI</strong> node and select: <strong>Create --&gt; Create Renderer Nodes --&gt; Sprite Node (Splash)</strong>.</p>
+<p> <img src="img/create_background_layer_node.png" alt=""></p>
+</li>
+<li><p>You should see a small white colored <code>Node</code> appear on the <code>Scene</code>. Example:</p>
+<p>  <img src="img/create_background_layer_node_2.png" alt=""></p>
+<p><strong>Cocos Creator</strong> informs us of the  newly created <code>Node</code> objects parent, in this case the <code>Node</code> named <strong>UI</strong> that we created above.</p>
+<p>  <img src="img/create_background_layer_node_3.png" alt=""></p>
+</li>
+<li><p>Last, <strong>Right click</strong> on <strong>New Sprite(Splash)</strong> and rename it to <strong>Background</strong>.</p>
+</li>
+</ul>
+<h3 id="customizing-our-background-layer">Customizing our background layer</h3>
+<p>Now that we have our <code>Node</code> we need to assign it a color and a size. Typically, a background layer might take up the entire <code>Canvas</code>. Let&apos;s adjust the <strong>Background</strong> node&apos;s properties to do exactly this.</p>
+<ul>
+<li><p>First, select the <strong>Background</strong> node from the <strong>Node Tree</strong> panel.</p>
+</li>
+<li><p>Second, in the <strong>Properties</strong> panel, set the <strong>color</strong> to anything you like. I am going to choose <strong>white</strong> for simplicity as this is already the default.</p>
+</li>
+<li><p>Third, in the <strong>Properties</strong> panel, set the <strong>size</strong> and <strong>position</strong> of our <strong>Background</strong> node. We want it to take up the entire canvas, so this this should be set to the same size as the <strong>design resolution</strong> or in this case <strong>640 x 960</strong>. Also, the <strong>position</strong> should be set to <strong>0, 0</strong> so the node starts at the bottom left corner of the canvas.</p>
+<p>  <img src="img/size.png" alt="">  <img src="img/position.png" alt=""></p>
+</li>
+<li><p>Last, double check to make sure what you have matches our progress so far.</p>
+<p>  <img src="img/background_finished.png" alt=""></p>
+</li>
+</ul>
+<p><strong>Task:</strong> Now is a good time to save your project! From the <strong>File</strong> menu, select <strong>Save Scene</strong> or use your operating system&apos;s shortcut key.</p>
+<p>Next, we can add a <a href="game_title.html">game title</a>...</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="housekeeping.html" class="navigation navigation-prev " aria-label="Previous page: UI housekeeping">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="game_title.html" class="navigation navigation-next " aria-label="Next page: Adding a game title">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Creating a colored background","level":"1.4.3","depth":2,"next":{"title":"Adding a game title","level":"1.4.4","depth":2,"path":"03-creating-a-menu-screen/game_title.md","ref":"03-creating-a-menu-screen/game_title.md","articles":[]},"previous":{"title":"UI housekeeping","level":"1.4.2","depth":2,"path":"03-creating-a-menu-screen/housekeeping.md","ref":"03-creating-a-menu-screen/housekeeping.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language","search-title","anchorjs","toggle-chapters","sharing","codetabs"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github-issue-feedback-language":{"repo":"cocos-creator/Tutorial-Dr.Mario-Style-Game","branch":"master"},"livereload":{},"codetabs":{},"fontsettings":{"theme":"white","family":"sans","size":2},"search-title":{},"highlight":{},"sharing":{"qq":false,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{},"toggle-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"language":"en","gitbook":"*"},"file":{"path":"03-creating-a-menu-screen/background.md","mtime":"2019-05-29T13:40:27.209Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-31T01:43:55.129Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-issue-feedback-language/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+        var path = location.href;
+        // console.log(path);
+        if (path.indexOf('/zh') !== -1) {
+            path = path.replace(/\/zh[\/$\s]/i, '/en/');
+        } else if (path.indexOf('/en') !== -1) {
+            path = path.replace(/\/en[\/$\s]/i, '/zh/');
+        }
+        // console.log('after: ' + path);
+        location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

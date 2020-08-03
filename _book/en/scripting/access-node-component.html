@@ -1,0 +1,3300 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>访问节点和其他组件 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-title/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="basic-node-api.html" />
+    
+    
+    <link rel="prev" href="reference/attributes.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+    <nav role="navigation" class="autoshow">
+        <ul class="summary">
+        <li><a href="https://cocos.com" class="btn" target="_blank"><img src="https://forum.cocos.org/images/logo.png" height="30" /></a></li>
+        <li><a href="#" class="btn" onclick="toggleLanguage()">中文</a></li>
+        
+        
+        <li class="version-link">
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">1.1</span></a>
+            <ul class="hovershow">
+                
+                <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">1.0</span></a></li>
+                
+                <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">3.0 Tech Preview</span></a></li>
+                
+            </ul>
+        </li>
+        
+        
+        
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos Creator</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/creator/manual/en" class="btn">Manual</a></li>
+                
+                <li><a href="https://docs.cocos.com/creator/api/en" class="btn">API Ref</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos Creator 3D</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Manual</a></li>
+                
+                <li><a href="https://docs.cocos.com/creator3d/api/en" class="btn">API Ref</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        
+        <li>
+            <a href="#" class="btn"><i class="fa fa-book"></i>Cocos2d-x</a>
+            <ul>
+                
+                <li><a href="https://docs.cocos.com/cocos2d-x/manual/en" class="btn">Manual</a></li>
+                
+                <li><a href="http://docs.cocos2d-x.org/api-ref/index.html" class="btn">API Ref</a></li>
+                
+            </ul>
+        </li>
+        
+    
+        </ul>
+    </nav>
+    
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Beginners Guide</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../getting-started/index.md">
+            
+                <span>
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../getting-started/dashboard/">
+            
+                <a href="../getting-started/dashboard/">
+            
+                    
+                    Dashboard
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../getting-started/helloworld/index.md">
+            
+                <span>
+            
+                    
+                    Hello world!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../getting-started/first-game/index.md">
+            
+                <span>
+            
+                    
+                    Quick Start: First Game
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../getting-started/attention/">
+            
+                <a href="../getting-started/attention/">
+            
+                    
+                    Caution!
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Editor Manual</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../editor/">
+            
+                <a href="../editor/">
+            
+                    
+                    Editor Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../editor/scene/">
+            
+                <a href="../editor/scene/">
+            
+                    
+                    Scene Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../editor/hierarchy/">
+            
+                <a href="../editor/hierarchy/">
+            
+                    
+                    Hierarchy Manager
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../editor/assets/">
+            
+                <a href="../editor/assets/">
+            
+                    
+                    Assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../editor/inspector/">
+            
+                <a href="../editor/inspector/">
+            
+                    
+                    Inspector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../editor/console/">
+            
+                <a href="../editor/console/">
+            
+                    
+                    Console
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../editor/animation/">
+            
+                <a href="../editor/animation/">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../editor/preferences/">
+            
+                <a href="../editor/preferences/">
+            
+                    
+                    Preferences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../editor/project/">
+            
+                <a href="../editor/project/">
+            
+                    
+                    Project Settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../editor/engine-customization/engine-customization.html">
+            
+                <a href="../editor/engine-customization/engine-customization.html">
+            
+                    
+                    Engine Customization Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../editor/preview/">
+            
+                <a href="../editor/preview/">
+            
+                    
+                    Preview a Game
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../editor/preview/browser.html">
+            
+                <a href="../editor/preview/browser.html">
+            
+                    
+                    Previewing in Browser
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../preview-guid.md">
+            
+                <span>
+            
+                    
+                    Introduction To Preview Process And Common Error Handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../particle-system/editor/">
+            
+                <a href="../particle-system/editor/">
+            
+                    
+                    Particle Editor
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../particle-system/editor/curve-editor.html">
+            
+                <a href="../particle-system/editor/curve-editor.html">
+            
+                    
+                    Curve Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../particle-system/editor/gradient-editor.html">
+            
+                <a href="../particle-system/editor/gradient-editor.html">
+            
+                    
+                    Gradient Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../particle-system/editor/particle-effect-panel.html">
+            
+                <a href="../particle-system/editor/particle-effect-panel.html">
+            
+                    
+                    Particle Effects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../editor/animation/">
+            
+                <a href="../editor/animation/">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../editor/animation/animation.html">
+            
+                <a href="../editor/animation/animation.html">
+            
+                    
+                    About Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.2" data-path="../editor/animation/animation-editor.html">
+            
+                <a href="../editor/animation/animation-editor.html">
+            
+                    
+                    Familiar with animation editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.3" data-path="../editor/animation/animation-create.html">
+            
+                <a href="../editor/animation/animation-create.html">
+            
+                    
+                    Create Animation components and animation clips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.4" data-path="../editor/animation/animation-clip.html">
+            
+                <a href="../editor/animation/animation-clip.html">
+            
+                    
+                    Edit Animation Sequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.5" data-path="../editor/animation/sprite-animation.html">
+            
+                <a href="../editor/animation/sprite-animation.html">
+            
+                    
+                    Creating A Frame Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.6" data-path="../editor/animation/animation-curve.html">
+            
+                <a href="../editor/animation/animation-curve.html">
+            
+                    
+                    Edit Animation Curve
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4.7" data-path="../editor/animation/animation-event.html">
+            
+                <a href="../editor/animation/animation-event.html">
+            
+                    
+                    Animation event
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../editor/terrain/">
+            
+                <a href="../editor/terrain/">
+            
+                    
+                    Terrain System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../editor/lightmap/">
+            
+                <a href="../editor/lightmap/">
+            
+                    
+                    Lightmap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../editor/publish/">
+            
+                <a href="../editor/publish/">
+            
+                    
+                    Build and Publish
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="../editor/publish/build-panel.html">
+            
+                <a href="../editor/publish/build-panel.html">
+            
+                    
+                    About the Build Panel
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.2" data-path="../editor/publish/build-options.html">
+            
+                <a href="../editor/publish/build-options.html">
+            
+                    
+                    General Build Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.3" data-path="../editor/publish/publish-web.html">
+            
+                <a href="../editor/publish/publish-web.html">
+            
+                    
+                    Publishing to the Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4" data-path="../editor/publish/publish-native.html">
+            
+                <a href="../editor/publish/publish-native.html">
+            
+                    
+                    Publishing to Native
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.4.1" data-path="../editor/publish/setup-native-development.html">
+            
+                <a href="../editor/publish/setup-native-development.html">
+            
+                    
+                    Setup Native Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.4.2" data-path="../editor/publish/debug-jsb.html">
+            
+                <a href="../editor/publish/debug-jsb.html">
+            
+                    
+                    Debuging JavaScript on Native Platforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.5" data-path="../editor/publish/publish-in-command-line.html">
+            
+                <a href="../editor/publish/publish-in-command-line.html">
+            
+                    
+                    Publishing from the Command Line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.6" data-path="../editor/publish/custom-project-build-template.html">
+            
+                <a href="../editor/publish/custom-project-build-template.html">
+            
+                    
+                    Custom Project Build Process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.7" data-path="../editor/publish/build-guide.html">
+            
+                <a href="../editor/publish/build-guide.html">
+            
+                    
+                    Build Process with FAQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8" >
+            
+                <span>
+            
+                    
+                    Publishing to Mini Games
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.8.1" data-path="../editor/publish/publish-alipay-mini-game.html">
+            
+                <a href="../editor/publish/publish-alipay-mini-game.html">
+            
+                    
+                    Publishing to Alipay Mini Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.2" data-path="../editor/publish/publish-baidugame.html">
+            
+                <a href="../editor/publish/publish-baidugame.html">
+            
+                    
+                    Publishing to Baidu Mini Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.3" data-path="../editor/publish/publish-bytedance-mini-game.html">
+            
+                <a href="../editor/publish/publish-bytedance-mini-game.html">
+            
+                    
+                    Publishing to ByteDance Mini Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.4" data-path="../editor/publish/publish-cocos-play.html">
+            
+                <a href="../editor/publish/publish-cocos-play.html">
+            
+                    
+                    Publishing to Cocos Play
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.5" data-path="../editor/publish/publish-huawei-mini-game.html">
+            
+                <a href="../editor/publish/publish-huawei-mini-game.html">
+            
+                    
+                    Publishing to Huawei Quick Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.6" data-path="../editor/publish/publish-oppo-mini-game.html">
+            
+                <a href="../editor/publish/publish-oppo-mini-game.html">
+            
+                    
+                    Publishing to OPPO Mini Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.7" data-path="../editor/publish/publish-vivo-mini-game.html">
+            
+                <a href="../editor/publish/publish-vivo-mini-game.html">
+            
+                    
+                    Publishing to vivo Mini Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.8" data-path="../editor/publish/publish-wechatgame.html">
+            
+                <a href="../editor/publish/publish-wechatgame.html">
+            
+                    
+                    Publishing to WeChat Mini Games
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.8.8.1" data-path="../editor/publish/wechatgame-plugin.html">
+            
+                <a href="../editor/publish/wechatgame-plugin.html">
+            
+                    
+                    WeChat Engine Plugin
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7.8.9" data-path="../editor/publish/publish-xiaomi-quick-game.html">
+            
+                <a href="../editor/publish/publish-xiaomi-quick-game.html">
+            
+                    
+                    Publishing to Xiaomi Quick Games
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Engine Manual</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../module-map/index.md">
+            
+                <span>
+            
+                    
+                    功能地图
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../module-map/graphics.md">
+            
+                <span>
+            
+                    
+                    图形渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../concepts/scene/">
+            
+                <a href="../concepts/scene/">
+            
+                    
+                    Scene and Environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.2.1" data-path="../concepts/scene/coord.html">
+            
+                <a href="../concepts/scene/coord.html">
+            
+                    
+                    Coordinate system
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.2" data-path="../concepts/scene/scene.html">
+            
+                <a href="../concepts/scene/scene.html">
+            
+                    
+                    Scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.3" data-path="../concepts/scene/node.html">
+            
+                <a href="../concepts/scene/node.html">
+            
+                    
+                    Node
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2.4" data-path="../concepts/scene/skybox.html">
+            
+                <a href="../concepts/scene/skybox.html">
+            
+                    
+                    Skybox
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../concepts/scene/light.html">
+            
+                <a href="../concepts/scene/light.html">
+            
+                    
+                    Lighting
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.3.1" data-path="../concepts/scene/light/pbr-lighting.html">
+            
+                <a href="../concepts/scene/light/pbr-lighting.html">
+            
+                    
+                    Physically based lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.2" data-path="../concepts/scene/light/dir-light.html">
+            
+                <a href="../concepts/scene/light/dir-light.html">
+            
+                    
+                    Directional lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.3" data-path="../concepts/scene/light/sphere-light.html">
+            
+                <a href="../concepts/scene/light/sphere-light.html">
+            
+                    
+                    Spherical lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.4" data-path="../concepts/scene/light/spot-light.html">
+            
+                <a href="../concepts/scene/light/spot-light.html">
+            
+                    
+                    Spot lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.5" data-path="../concepts/scene/shadow.html">
+            
+                <a href="../concepts/scene/shadow.html">
+            
+                    
+                    Shadows
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3.6" data-path="../concepts/scene/ambient.html">
+            
+                <a href="../concepts/scene/ambient.html">
+            
+                    
+                    Ambient lighting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../material-system/overview.html">
+            
+                <a href="../material-system/overview.html">
+            
+                    
+                    Materials System
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.4.1" data-path="../material-system/yaml-101.html">
+            
+                <a href="../material-system/yaml-101.html">
+            
+                    
+                    YAML 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.2" data-path="../material-system/effect-syntax.html">
+            
+                <a href="../material-system/effect-syntax.html">
+            
+                    
+                    Effect Syntax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.3" data-path="../material-system/pass-parameter-list.html">
+            
+                <a href="../material-system/pass-parameter-list.html">
+            
+                    
+                    Pass Params
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.4" data-path="../material-system/builtin-shader-uniforms.html">
+            
+                <a href="../material-system/builtin-shader-uniforms.html">
+            
+                    
+                    Builtin Shader Uniforms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4.5" data-path="../material-system/builtin-shader-variables.md">
+            
+                <span>
+            
+                    
+                    Builtin Shader Variables
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../audio-system/overview.html">
+            
+                <a href="../audio-system/overview.html">
+            
+                    
+                    Audio System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../particle-system/overview.html">
+            
+                <a href="../particle-system/overview.html">
+            
+                    
+                    Particle System
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.6.1" data-path="../particle-system/module.html">
+            
+                <a href="../particle-system/module.html">
+            
+                    
+                    Particle System Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.2" data-path="../particle-system/main-module.html">
+            
+                <a href="../particle-system/main-module.html">
+            
+                    
+                    Main Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.3" data-path="../particle-system/emitter.html">
+            
+                <a href="../particle-system/emitter.html">
+            
+                    
+                    Emitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.4" data-path="../particle-system/color-module.html">
+            
+                <a href="../particle-system/color-module.html">
+            
+                    
+                    Color Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.5" data-path="../particle-system/size-module.html">
+            
+                <a href="../particle-system/size-module.html">
+            
+                    
+                    Size Modulle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.6" data-path="../particle-system/rotation-module.html">
+            
+                <a href="../particle-system/rotation-module.html">
+            
+                    
+                    Rotation Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.7" data-path="../particle-system/velocity-module.html">
+            
+                <a href="../particle-system/velocity-module.html">
+            
+                    
+                    Velocity Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.8" data-path="../particle-system/limit-velocity-module.html">
+            
+                <a href="../particle-system/limit-velocity-module.html">
+            
+                    
+                    Limit Velocity Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.9" data-path="../particle-system/force-module.html">
+            
+                <a href="../particle-system/force-module.html">
+            
+                    
+                    Force Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.10" data-path="../particle-system/texture-animation-module.html">
+            
+                <a href="../particle-system/texture-animation-module.html">
+            
+                    
+                    Texture Animation Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.11" data-path="../particle-system/renderer.html">
+            
+                <a href="../particle-system/renderer.html">
+            
+                    
+                    Renderer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6.12" data-path="../particle-system/trail-module.html">
+            
+                <a href="../particle-system/trail-module.html">
+            
+                    
+                    Trail Module
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../engine/animation/">
+            
+                <a href="../engine/animation/">
+            
+                    
+                    Animation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.7.1" data-path="../engine/animation/animation-component.html">
+            
+                <a href="../engine/animation/animation-component.html">
+            
+                    
+                    Animation Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.2" data-path="../engine/animation/animation-clip.html">
+            
+                <a href="../engine/animation/animation-clip.html">
+            
+                    
+                    Animation Clips
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7.3" data-path="../engine/animation/skeletal-animation.html">
+            
+                <a href="../engine/animation/skeletal-animation.html">
+            
+                    
+                    Skeletal Animation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../tween/">
+            
+                <a href="../tween/">
+            
+                    
+                    Tween
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../physics/physics.html">
+            
+                <a href="../physics/physics.html">
+            
+                    
+                    Physics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.9.1" data-path="../physics/physics-item.html">
+            
+                <a href="../physics/physics-item.html">
+            
+                    
+                    Physics Options
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.2" data-path="../physics/physics-system.html">
+            
+                <a href="../physics/physics-system.html">
+            
+                    
+                    Physics System
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.3" data-path="../physics/physics-component.html">
+            
+                <a href="../physics/physics-component.html">
+            
+                    
+                    Physics Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.4" data-path="../physics/physics-use.html">
+            
+                <a href="../physics/physics-use.html">
+            
+                    
+                    Using Physics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.5" data-path="../physics/physics-collider.html">
+            
+                <a href="../physics/physics-collider.html">
+            
+                    
+                    Physics Collider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.6" data-path="../physics/physics-material.html">
+            
+                <a href="../physics/physics-material.html">
+            
+                    
+                    Materials
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.7" data-path="../physics/physics-rigidbody.html">
+            
+                <a href="../physics/physics-rigidbody.html">
+            
+                    
+                    Rigid Body
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.8" data-path="../physics/physics-event.html">
+            
+                <a href="../physics/physics-event.html">
+            
+                    
+                    Physics Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.9" data-path="../physics/physics-group-mask.html">
+            
+                <a href="../physics/physics-group-mask.html">
+            
+                    
+                    Group Masks
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9.10" data-path="../physics/physics-raycast.html">
+            
+                <a href="../physics/physics-raycast.html">
+            
+                    
+                    Raycast
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../ui-system/components/engine/">
+            
+                <a href="../ui-system/components/engine/">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.10.1" data-path="../ui-system/components/engine/priority.html">
+            
+                <a href="../ui-system/components/engine/priority.html">
+            
+                    
+                    Rendering Order
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.2" data-path="../ui-system/components/engine/ui-batch.html">
+            
+                <a href="../ui-system/components/engine/ui-batch.html">
+            
+                    
+                    UI Batch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.3" data-path="../ui-system/components/engine/multi-resolution.html">
+            
+                <a href="../ui-system/components/engine/multi-resolution.html">
+            
+                    
+                    Multi-Resolution Adaption
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.4" data-path="../ui-system/components/engine/widget-align.html">
+            
+                <a href="../ui-system/components/engine/widget-align.html">
+            
+                    
+                    Widget Alignment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.5" data-path="../ui-system/components/engine/label-layout.html">
+            
+                <a href="../ui-system/components/engine/label-layout.html">
+            
+                    
+                    Label Layout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.6" data-path="../ui-system/components/engine/auto-layout.html">
+            
+                <a href="../ui-system/components/engine/auto-layout.html">
+            
+                    
+                    Auto Layout Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.7" data-path="../ui-system/components/engine/list-with-data.html">
+            
+                <a href="../ui-system/components/engine/list-with-data.html">
+            
+                    
+                    List with data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10.8" data-path="../ui-system/components/engine/sliced-sprite.html">
+            
+                <a href="../ui-system/components/engine/sliced-sprite.html">
+            
+                    
+                    Stretchable UI Sprite
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="../editor/components/">
+            
+                <a href="../editor/components/">
+            
+                    
+                    Components
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.1" data-path="../audio-system/overview.html">
+            
+                <a href="../audio-system/overview.html">
+            
+                    
+                    AudioSourceComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.2" data-path="../engine/renderable/model-component.html">
+            
+                <a href="../engine/renderable/model-component.html">
+            
+                    
+                    ModelComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.3" data-path="../engine/animation/skeletal-animation.html">
+            
+                <a href="../engine/animation/skeletal-animation.html">
+            
+                    
+                    SkinningModelComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.4" data-path="../editor/components/camera-component.html">
+            
+                <a href="../editor/components/camera-component.html">
+            
+                    
+                    CameraComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.5" data-path="../concepts/scene/light/dir-light.html">
+            
+                <a href="../concepts/scene/light/dir-light.html">
+            
+                    
+                    DirectionalLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.6" data-path="../concepts/scene/light/sphere-light.html">
+            
+                <a href="../concepts/scene/light/sphere-light.html">
+            
+                    
+                    SphereLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.7" data-path="../concepts/scene/light/spot-light.html">
+            
+                <a href="../concepts/scene/light/spot-light.html">
+            
+                    
+                    SpotLightComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.8" data-path="../engine/animation/animation-component.html">
+            
+                <a href="../engine/animation/animation-component.html">
+            
+                    
+                    AnimationComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.9" data-path="../particle-system/billboard-component.html">
+            
+                <a href="../particle-system/billboard-component.html">
+            
+                    
+                    BillboardComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.10" data-path="../particle-system/line-component.html">
+            
+                <a href="../particle-system/line-component.html">
+            
+                    
+                    LineComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.11" data-path="../particle-system/main-module.html">
+            
+                <a href="../particle-system/main-module.html">
+            
+                    
+                    ParticleSystemComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.12" data-path="../physics/physics-component.html">
+            
+                <a href="../physics/physics-component.html#盒碰撞器组件（boxcollidercomponent）">
+            
+                    
+                    BoxColliderComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.13" data-path="../physics/physics-component.html">
+            
+                <a href="../physics/physics-component.html#球碰撞器组件（spherecollidercomponent）">
+            
+                    
+                    SphereColliderComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.14" data-path="../physics/physics-component.html">
+            
+                <a href="../physics/physics-component.html#刚体组件">
+            
+                    
+                    RigidBodyComponent
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15" data-path="../ui-system/components/editor/">
+            
+                <a href="../ui-system/components/editor/">
+            
+                    
+                    UI Component Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.1" data-path="../ui-system/components/editor/render-component.html">
+            
+                <a href="../ui-system/components/editor/render-component.html">
+            
+                    
+                    UI Renderer Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.1.1" data-path="../ui-system/components/editor/sprite.html">
+            
+                <a href="../ui-system/components/editor/sprite.html">
+            
+                    
+                    Sprite Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.2" data-path="../ui-system/components/editor/label.html">
+            
+                <a href="../ui-system/components/editor/label.html">
+            
+                    
+                    Label Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.3" data-path="../ui-system/components/editor/mask.html">
+            
+                <a href="../ui-system/components/editor/mask.html">
+            
+                    
+                    Mask Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.4" data-path="../ui-system/components/editor/graphics.html">
+            
+                <a href="../ui-system/components/editor/graphics.html">
+            
+                    
+                    Graphics Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.5" data-path="../ui-system/components/editor/richtext.html">
+            
+                <a href="../ui-system/components/editor/richtext.html">
+            
+                    
+                    RichText Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.1.6" data-path="../ui-system/components/editor/ui-static.html">
+            
+                <a href="../ui-system/components/editor/ui-static.html">
+            
+                    
+                    UIStaticBatch Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2" data-path="../ui-system/components/editor/base-component.html">
+            
+                <a href="../ui-system/components/editor/base-component.html">
+            
+                    
+                    UI Basic Component 
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.11.15.2.1" data-path="../ui-system/components/editor/canvas.html">
+            
+                <a href="../ui-system/components/editor/canvas.html">
+            
+                    
+                    Canvas Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.2" data-path="../ui-system/components/editor/ui-transform.html">
+            
+                <a href="../ui-system/components/editor/ui-transform.html">
+            
+                    
+                    UITransform Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.3" data-path="../ui-system/components/editor/widget.html">
+            
+                <a href="../ui-system/components/editor/widget.html">
+            
+                    
+                    Widget Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.4" data-path="../ui-system/components/editor/button.html">
+            
+                <a href="../ui-system/components/editor/button.html">
+            
+                    
+                    Button Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.5" data-path="../ui-system/components/editor/layout.html">
+            
+                <a href="../ui-system/components/editor/layout.html">
+            
+                    
+                    Layout Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.6" data-path="../ui-system/components/editor/editbox.html">
+            
+                <a href="../ui-system/components/editor/editbox.html">
+            
+                    
+                    EditBox Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.7" data-path="../ui-system/components/editor/scrollview.html">
+            
+                <a href="../ui-system/components/editor/scrollview.html">
+            
+                    
+                    ScrollView Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.8" data-path="../ui-system/components/editor/scrollbar.html">
+            
+                <a href="../ui-system/components/editor/scrollbar.html">
+            
+                    
+                    ScrollBar Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.9" data-path="../ui-system/components/editor/progress.html">
+            
+                <a href="../ui-system/components/editor/progress.html">
+            
+                    
+                    ProgressBar Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.10" data-path="../ui-system/components/editor/label-outline.html">
+            
+                <a href="../ui-system/components/editor/label-outline.html">
+            
+                    
+                    LabelOutline Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.11" data-path="../ui-system/components/editor/toggle.html">
+            
+                <a href="../ui-system/components/editor/toggle.html">
+            
+                    
+                    Toggle Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.12" data-path="../ui-system/components/editor/toggleContainer.html">
+            
+                <a href="../ui-system/components/editor/toggleContainer.html">
+            
+                    
+                    ToggleContainer Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.13" data-path="../ui-system/components/editor/slider.html">
+            
+                <a href="../ui-system/components/editor/slider.html">
+            
+                    
+                    Slider Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.14" data-path="../ui-system/components/editor/pageview.html">
+            
+                <a href="../ui-system/components/editor/pageview.html">
+            
+                    
+                    PageView Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.15" data-path="../ui-system/components/editor/pageviewindicator.html">
+            
+                <a href="../ui-system/components/editor/pageviewindicator.html">
+            
+                    
+                    PageViewIndicator Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.16" data-path="../ui-system/components/editor/ui-model.html">
+            
+                <a href="../ui-system/components/editor/ui-model.html">
+            
+                    
+                    UIModel Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.17" data-path="../ui-system/components/editor/ui-opacity.html">
+            
+                <a href="../ui-system/components/editor/ui-opacity.html">
+            
+                    
+                    UIOpacity Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11.15.2.18" data-path="../ui-system/components/editor/block-input-enents.html">
+            
+                <a href="../ui-system/components/editor/block-input-enents.html">
+            
+                    
+                    BlockInputEvents Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    脚本指南及事件机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.12.1" data-path="setup.html">
+            
+                <a href="setup.html">
+            
+                    
+                    脚本创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.2" data-path="basic.html">
+            
+                <a href="basic.html">
+            
+                    
+                    脚本基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.3" data-path="language-support.html">
+            
+                <a href="language-support.html">
+            
+                    
+                    语言支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.4" data-path="ccclass.html">
+            
+                <a href="ccclass.html">
+            
+                    
+                    ccclass
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.5" data-path="reference/attributes.html">
+            
+                <a href="reference/attributes.html">
+            
+                    
+                    属性参数参考
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.12.6" data-path="access-node-component.html">
+            
+                <a href="access-node-component.html">
+            
+                    
+                    访问节点和其他组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.7" data-path="basic-node-api.html">
+            
+                <a href="basic-node-api.html">
+            
+                    
+                    常用节点和组件接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.8" data-path="life-cycle-callbacks.html">
+            
+                <a href="life-cycle-callbacks.html">
+            
+                    
+                    生命周期回调
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.9" data-path="create-destroy.html">
+            
+                <a href="create-destroy.html">
+            
+                    
+                    创建和销毁节点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.10" data-path="scene-managing.html">
+            
+                <a href="scene-managing.html">
+            
+                    
+                    加载和切换场景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.11" data-path="load-assets.html">
+            
+                <a href="load-assets.html">
+            
+                    
+                    获取和加载资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.12" data-path="scheduler.html">
+            
+                <a href="scheduler.html">
+            
+                    
+                    使用计时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.13" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.14" data-path="execution-order-component.html">
+            
+                <a href="execution-order-component.html">
+            
+                    
+                    组件顺序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.15" data-path="../engine/event/">
+            
+                <a href="../engine/event/">
+            
+                    
+                    事件机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.16" data-path="plugin-scripts.md">
+            
+                <span>
+            
+                    
+                    插件脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.17" data-path="log.html">
+            
+                <a href="log.html">
+            
+                    
+                    添加 Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12.18" data-path="deprecated.html">
+            
+                <a href="deprecated.html">
+            
+                    
+                    废弃 API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="../asset/">
+            
+                <a href="../asset/">
+            
+                    
+                    Asset Manual
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.1" data-path="../asset/asset-workflow.html">
+            
+                <a href="../asset/asset-workflow.html">
+            
+                    
+                    Asset workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.2" data-path="../asset/load-assets.html">
+            
+                <a href="../asset/load-assets.html">
+            
+                    
+                    Loading assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.3" data-path="../asset/subpackage.html">
+            
+                <a href="../asset/subpackage.html">
+            
+                    
+                    Subpackages
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.4" data-path="../asset/scene.html">
+            
+                <a href="../asset/scene.html">
+            
+                    
+                    Scene
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5" data-path="../asset/image.html">
+            
+                <a href="../asset/image.html">
+            
+                    
+                    Images
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.13.5.1" data-path="../asset/texture.html">
+            
+                <a href="../asset/texture.html">
+            
+                    
+                    Textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.2" data-path="../asset/sprite-frame.html">
+            
+                <a href="../asset/sprite-frame.html">
+            
+                    
+                    Sprite Frames
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.3" data-path="../concepts/scene/skybox.html">
+            
+                <a href="../concepts/scene/skybox.html#cubemap">
+            
+                    
+                    Skybox
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.4" data-path="../ui-system/components/engine/trim.html">
+            
+                <a href="../ui-system/components/engine/trim.html">
+            
+                    
+                    Texture Auto Trim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.5" data-path="../asset/compress-texture.html">
+            
+                <a href="../asset/compress-texture.html">
+            
+                    
+                    Compressed textures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.6" data-path="../asset/atlas.html">
+            
+                <a href="../asset/atlas.html">
+            
+                    
+                    Atlas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.7" data-path="../asset/auto-atlas.html">
+            
+                <a href="../asset/auto-atlas.html">
+            
+                    
+                    Auto Atlas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.5.8" data-path="../asset/render-texture.html">
+            
+                <a href="../asset/render-texture.html">
+            
+                    
+                    Render-texture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.6" data-path="../asset/prefab.html">
+            
+                <a href="../asset/prefab.html">
+            
+                    
+                    Prefab
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.7" data-path="../asset/script.html">
+            
+                <a href="../asset/script.html">
+            
+                    
+                    Scripting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.8" data-path="../asset/font.html">
+            
+                <a href="../asset/font.html">
+            
+                    
+                    Fonts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.9" data-path="../asset/audio.html">
+            
+                <a href="../asset/audio.html">
+            
+                    
+                    Audio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.10" data-path="../asset/material.html">
+            
+                <a href="../asset/material.html">
+            
+                    
+                    Material
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.11" data-path="../asset/mesh.html">
+            
+                <a href="../asset/mesh.html">
+            
+                    
+                    Mesh
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13.12" data-path="../asset/anim.html">
+            
+                <a href="../asset/anim.html">
+            
+                    
+                    Animation assets
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="../tests/index.md">
+            
+                <span>
+            
+                    
+                    测试规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.14.1" data-path="../tests/qa-process.md">
+            
+                <span>
+            
+                    
+                    测试流程文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14.2" data-path="../tests/unit-test.md">
+            
+                <span>
+            
+                    
+                    单元测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                    
+
+<div class="cocos-navbar navbar-collapse" id="navbar" role="navigation">
+    <ul class="nav navbar-nav">
+        <li><a href="https://cocos.com" class="btn" target="_blank"><img src="https://forum.cocos.org/images/logo.png" height="30" /></a></li>
+        <li><a href="#" class="btn autohide" onclick="toggleLanguage()">中文</a></li>
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos Creator</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator/manual/en" class="btn">Manual</a></li>
+            
+            <li><a href="https://docs.cocos.com/creator/api/en" class="btn">API Ref</a></li>
+            
+        </ul>
+    </li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos Creator 3D</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Manual</a></li>
+            
+            <li><a href="https://docs.cocos.com/creator3d/api/en" class="btn">API Ref</a></li>
+            
+        </ul>
+    </li>
+    
+
+    
+    <li>
+        <a href="#" class="btn autohide"><i class="fa fa-book"></i>Cocos2d-x</a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/cocos2d-x/manual/en" class="btn">Manual</a></li>
+            
+            <li><a href="http://docs.cocos2d-x.org/api-ref/index.html" class="btn">API Ref</a></li>
+            
+        </ul>
+    </li>
+    
+
+
+    
+    <li class="version-link">
+        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">1.1</span></a>
+        <ul class="hovershow">
+            
+            <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold">1.0</span></a></li>
+            
+            <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold">3.0 Tech Preview</span></a></li>
+            
+        </ul>
+    </li>
+    
+
+    </ul>
+</div>
+<div class="book-header" role="navigation">
+    
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >访问节点和其他组件</a>
+    </h1>
+</div>
+
+
+
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="access-nodes-and-components">Access nodes and components</h1>
+<p>You can modify nodes and components in the <strong>Property Inspector</strong>, or dynamically in a script. The advantage of modifying dynamically is 
+that attributes can be continuously modified, either quickly or over a period of time to achieve a gradual effect. Scripts can also respond to player input, and can modify, create, or destroy nodes. Scripts also allow a variety of game logic to be implemented. To achieve these effects, you need to get the node or component you want to modify in the script first.</p>
+<h2 id="concepts">Concepts</h2>
+<p>This document introduces the following concepts:</p>
+<ul>
+<li>Obtaining the node where the component is located</li>
+<li>Obtaining other components</li>
+<li>Use the <strong>Property Inspector</strong> to set-up nodes and components</li>
+<li>Find child nodes</li>
+<li>Global node lookup</li>
+<li>Access values in existing variables</li>
+</ul>
+<h2 id="obtain-the-node-where-the-component-is-located">Obtain the node where the component is located</h2>
+<p>Obtaining the node where the component is located is as simple as accessing the <code>this.node</code> variable in the component method. Example:</p>
+<pre><code class="lang-ts">start(){
+    <span class="hljs-keyword">let</span> node = <span class="hljs-keyword">this</span>.node;
+    node.setPosition(<span class="hljs-number">0.0</span>,<span class="hljs-number">0.0</span>,<span class="hljs-number">0.0</span>);
+}
+</code></pre>
+<h2 id="obtaining-other-components">Obtaining other components</h2>
+<p>It is often required to obtain other components on the same node. Using the <code>getComponent</code> API will help find the component. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { _decorator, Component, LabelComponent } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;test&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> test extends Component {
+    <span class="hljs-keyword">private</span> label: <span class="hljs-built_in">any</span> = <span class="hljs-literal">null</span>
+
+    start(){
+        <span class="hljs-keyword">this</span>.label = <span class="hljs-keyword">this</span>.getComponent(LabelComponent);
+        <span class="hljs-keyword">let</span> text = <span class="hljs-keyword">this</span>.name + <span class="hljs-string">&apos;started&apos;</span>;
+        <span class="hljs-comment">// Change the text in Label Component</span>
+        <span class="hljs-keyword">this</span>.label.string = text;
+    }
+}
+</code></pre>
+<p>You can also pass in a class name to <code>getComponent</code>. For user-defined components, the class name is the file name of the script, and is <strong>case sensitive</strong>. For example, the component declared in <strong>SinRotate.ts</strong>, the class name is <strong>SinRotate</strong>. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">let</span> rotate = <span class="hljs-keyword">this</span>.getComponent(<span class="hljs-string">&quot;SinRotate&quot;</span>);
+</code></pre>
+<p><code>getComponent</code> is also available from a node. It works exactly the same. Example:</p>
+<pre><code class="lang-ts">start() {
+    <span class="hljs-built_in">console</span>.log( <span class="hljs-keyword">this</span>.node.getComponent(LabelComponent) === <span class="hljs-keyword">this</span>.getComponent(LabelComponent) );  <span class="hljs-comment">// true</span>
+}
+</code></pre>
+<p>If a component cannot be found on a node, <code>getComponent</code> will return <strong>null</strong>. Accessing the value of <strong>null</strong>, it will throw a <strong>TypeError</strong> error at runtime. To decide whether a component exists, please do a sanity check. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">import</span> { _decorator, Component, LabelComponent } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;test&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> test extends Component {
+    <span class="hljs-keyword">private</span> label: <span class="hljs-built_in">any</span> =<span class="hljs-literal">null</span>;
+
+    start() {
+        <span class="hljs-keyword">this</span>.label = <span class="hljs-keyword">this</span>.getComponent(LabelComponent);
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.label) {
+            <span class="hljs-keyword">this</span>.label.string = <span class="hljs-string">&quot;Hello&quot;</span>;
+        }
+        <span class="hljs-keyword">else</span> {
+            <span class="hljs-built_in">console</span>.error(<span class="hljs-string">&quot;Something wrong?&quot;</span>);
+        }
+    }
+}
+</code></pre>
+<h2 id="obtaining-other-nodes-and-their-components">Obtaining other nodes and their components</h2>
+<p>It is usually not enough to only be able to access the node&apos;s own components. Scripts usually need to interact between multiple nodes. For example, a cannon that automatically targets a player needs to constantly obtain the latest position of the player. <strong>Cocos Creator 3D</strong> provides some different methods to obtain other nodes and/or other components.</p>
+<h3 id="setting-a-node-using-property-inspector">Setting a node using Property Inspector</h3>
+<p>The most direct way is to set the object you need in the <strong>Property Inspector</strong>. Taking the node as an example, this only needs to declare an attribute of type <code>Node</code> in the script. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// Cannon.ts</span>
+
+<span class="hljs-keyword">import</span> { _decorator, Component, Node } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;Cannon&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Cannon extends Component {
+    <span class="hljs-comment">// Declare Player attribute</span>
+    @property({<span class="hljs-keyword">type</span>:Node})
+    <span class="hljs-keyword">private</span> player = <span class="hljs-literal">null</span>;
+}
+</code></pre>
+<p>This code declares a <code>player</code> property in <code>properties</code> with a default value of <strong>null</strong>, and specifies its object type as type <code>Node</code>. This is equivalent to declaring <code>public Node player = null;</code> in other languages. After the script is compiled, this component looks like this in the <strong>Property Inspector</strong>:</p>
+<p><img src="access-node-component/player-in-inspector-null.png" alt="player-in-inspector-null"></p>
+<p>Then, you can drag any node on the <strong>Hierarchy Manager</strong> to this <code>Player</code> control.</p>
+<p><img src="access-node-component/player-in-inspector.png" alt="player-in-inspector"></p>
+<p>In this way, the <code>player</code> property will be set successfully, and can be accessed directly in the script. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// Cannon.ts</span>
+
+<span class="hljs-keyword">import</span> { _decorator, Component, Node } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;Cannon&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Cannon extends Component {
+
+    @property({<span class="hljs-keyword">type</span>:Node})
+    <span class="hljs-keyword">private</span> player = <span class="hljs-literal">null</span>;
+
+    start() {
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;The player is &quot;</span> + <span class="hljs-keyword">this</span>.player.name);
+    }
+}
+</code></pre>
+<h3 id="using-the-property-inspector-to-set-a-component">Using the Property Inspector to set a Component</h3>
+<p>In the above example, if you declare the type of the property as the <code>Player</code> component, when you drag the <strong>Player Node</strong> to the <strong>Property Inspector</strong>, the <code>Player</code> property will be set to the <code>Player</code> component in this node. It is then not necessary to call <code>getComponent</code> yourself. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// Cannon.ts</span>
+
+<span class="hljs-keyword">import</span> { _decorator, Component } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+<span class="hljs-keyword">import</span> { Player } from <span class="hljs-string">&quot;Player&quot;</span>;
+
+@ccclass(<span class="hljs-string">&quot;Cannon&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Cannon extends Component {
+    @property({<span class="hljs-keyword">type</span>:Player})
+    <span class="hljs-keyword">private</span> player = <span class="hljs-literal">null</span>;
+
+    start(){
+        <span class="hljs-keyword">let</span> PlayerComp = <span class="hljs-keyword">this</span>.player;
+    }
+}
+</code></pre>
+<p>Tthe default value of an attribute can be changed from <code>null</code> to an array <code>[]</code>. This allows setting multiple objects in the <strong>Property Inspector</strong> at the same time. However, if you need to dynamically obtain other objects at runtime, you also need to use the search method described below.</p>
+<h3 id="finding-child-nodes">Finding child nodes</h3>
+<p>Sometimes, there are many objects of the same type in the game scene, such as turrets, enemies, and special effects. Usually a global script manages them uniformly. If the <strong>Property Inspector</strong> is used to associate them one by one with this script, the work will be tedious. In-order to better manage these objects in a unified way, they can be placed under a unified parent object. Then all of the child objects can be obtained through the parent object. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// CannonManager.ts</span>
+
+<span class="hljs-keyword">import</span> { _decorator, Component, Node } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;CannonManager&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> CannonManager extends Component {
+
+    start() {
+        <span class="hljs-keyword">let</span> cannons = <span class="hljs-keyword">this</span>.node.children;
+        <span class="hljs-comment">//...</span>
+    }
+
+}
+</code></pre>
+<p><code>getChildByName</code> can also be used. Example:</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">this</span>.node.getChildByName(<span class="hljs-string">&quot;Cannon 01&quot;</span>);
+</code></pre>
+<p>&#x5982;&#x679C;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x5C42;&#x6B21;&#x8F83;&#x6DF1;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>find</code>&#xFF0C;<code>find</code> &#x5C06;&#x6839;&#x636E;&#x4F20;&#x5165;&#x7684;&#x8DEF;&#x5F84;&#x8FDB;&#x884C;&#x9010;&#x7EA7;&#x67E5;&#x627E;&#xFF1A;</p>
+<pre><code class="lang-ts">find(<span class="hljs-string">&quot;Cannon 01/Barrel/SFX&quot;</span>, <span class="hljs-keyword">this</span>.node);
+</code></pre>
+<h3 id="&#x5168;&#x5C40;&#x540D;&#x5B57;&#x67E5;&#x627E;">&#x5168;&#x5C40;&#x540D;&#x5B57;&#x67E5;&#x627E;</h3>
+<p>&#x5F53; <code>find</code> &#x53EA;&#x4F20;&#x5165;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x5C06;&#x4ECE;&#x573A;&#x666F;&#x6839;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x9010;&#x7EA7;&#x67E5;&#x627E;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-keyword">this</span>.backNode = find(<span class="hljs-string">&quot;Canvas/Menu/Back&quot;</span>);
+</code></pre>
+<h2 id="&#x8BBF;&#x95EE;&#x5DF2;&#x6709;&#x53D8;&#x91CF;&#x91CC;&#x7684;&#x503C;">&#x8BBF;&#x95EE;&#x5DF2;&#x6709;&#x53D8;&#x91CF;&#x91CC;&#x7684;&#x503C;</h2>
+<p>&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x5728;&#x4E00;&#x4E2A;&#x5730;&#x65B9;&#x4FDD;&#x5B58;&#x4E86;&#x8282;&#x70B9;&#x6216;&#x7EC4;&#x4EF6;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5B83;&#x4EEC;</p>
+<h3 id="&#x901A;&#x8FC7;&#x6A21;&#x5757;&#x8BBF;&#x95EE;">&#x901A;&#x8FC7;&#x6A21;&#x5757;&#x8BBF;&#x95EE;</h3>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <code>import</code> &#x6765;&#x5B9E;&#x73B0;&#x811A;&#x672C;&#x7684;&#x8DE8;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x770B;&#x4E2A;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// Global.ts, now the filename matters</span>
+<span class="hljs-keyword">import</span> { _decorator, Component, Node } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+
+@ccclass(<span class="hljs-string">&quot;Global&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Global extends Component {
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> backNode:<span class="hljs-built_in">any</span>=<span class="hljs-literal">null</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> backLabel:<span class="hljs-built_in">any</span>=<span class="hljs-literal">null</span>;
+}
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x811A;&#x672C;&#x90FD;&#x80FD;&#x7528; <code>import{ } from</code> + &#x6587;&#x4EF6;&#x540D;(&#x4E0D;&#x542B;&#x8DEF;&#x5F84;) &#x6765;&#x83B7;&#x53D6;&#x5230;&#x5BF9;&#x65B9; exports &#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre><code class="lang-ts"><span class="hljs-comment">// Back.ts</span>
+<span class="hljs-keyword">import</span> { _decorator, Component, Node, LabelComponent } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+<span class="hljs-comment">// this feels more safe since you know where the object comes from</span>
+<span class="hljs-keyword">import</span>{Global}from <span class="hljs-string">&quot;./Global&quot;</span>;
+
+@ccclass(<span class="hljs-string">&quot;Back&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> Back extends Component {
+    onLoad(){
+        Global.backNode=<span class="hljs-keyword">this</span>.node;
+        Global.backLabel=<span class="hljs-keyword">this</span>.getComponent(LabelComponent);
+    }
+}
+</code></pre>
+<pre><code class="lang-ts"><span class="hljs-comment">// AnyScript.ts</span>
+<span class="hljs-keyword">import</span> { _decorator, Component, Node } from <span class="hljs-string">&quot;cc&quot;</span>;
+<span class="hljs-keyword">const</span> { ccclass, property } = _decorator;
+<span class="hljs-comment">// this feels more safe since you know where the object comes from</span>
+<span class="hljs-keyword">import</span>{Global}from <span class="hljs-string">&quot;./Global&quot;</span>;
+
+@ccclass(<span class="hljs-string">&quot;AnyScript&quot;</span>)
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">class</span> AnyScript extends Component {
+    start () {
+        <span class="hljs-keyword">var</span> text = <span class="hljs-string">&quot;Back&quot;</span>;
+        Global.backLabel.string=text;
+    }
+}
+</code></pre>
+<hr>
+<p>&#x7EE7;&#x7EED;&#x524D;&#x5F80; <a href="basic-node-api.html">&#x5E38;&#x7528;&#x8282;&#x70B9;&#x548C;&#x7EC4;&#x4EF6;&#x63A5;&#x53E3;</a>&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="reference/attributes.html" class="navigation navigation-prev " aria-label="Previous page: 属性参数参考">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="basic-node-api.html" class="navigation navigation-next " aria-label="Next page: 常用节点和组件接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"访问节点和其他组件","level":"3.12.6","depth":2,"next":{"title":"常用节点和组件接口","level":"3.12.7","depth":2,"path":"scripting/basic-node-api.md","ref":"scripting/basic-node-api.md","articles":[]},"previous":{"title":"属性参数参考","level":"3.12.5","depth":2,"path":"scripting/reference/attributes.md","ref":"scripting/reference/attributes.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"Manual","link":"https://docs.cocos.com/creator/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator/api/en"}]},{"name":"Cocos Creator 3D","links":[{"name":"Manual","link":"https://docs.cocos.com/creator3d/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator3d/api/en"}]},{"name":"Cocos2d-x","links":[{"name":"Manual","link":"https://docs.cocos.com/cocos2d-x/manual/en"},{"name":"API Ref","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"1.1","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/en"},{"name":"3.0 Tech Preview","link":"https://docs.cocos.com/creator3d/manual/en"}]}]},"language":"en","gitbook":"*"},"file":{"path":"scripting/access-node-component.md","mtime":"2020-07-09T19:30:28.041Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T16:55:11.716Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github-issue-feedback-language-custom/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-title/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script type="text/javascript">
+    function toggleLanguage () {
+            var path = location.href;
+            // console.log(path);
+            if (path.indexOf('/zh') !== -1) {
+                path = path.replace(/\/zh[\/$\s]/i, '/en/');
+            } else if (path.indexOf('/en') !== -1) {
+                path = path.replace(/\/en[\/$\s]/i, '/zh/');
+            }
+            // console.log('after: ' + path);
+            location.assign(path);
+    }
+    </script>
+
+    </body>
+</html>
+

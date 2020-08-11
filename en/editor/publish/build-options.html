@@ -76,12 +76,12 @@
         
         
         <li class="version-link">
-            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">1.1</span></a>
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">3.0 Tech Preview</span></a>
             <ul class="hovershow">
                 
                 <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">1.0</span></a></li>
                 
-                <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">3.0 Tech Preview</span></a></li>
+                <li><a href="https://docs.cocos.com/creator3d/1.1/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">1.1</span></a></li>
                 
             </ul>
         </li>
@@ -366,7 +366,7 @@
                 <span>
             
                     
-                    Engine Customization Workflow
+                    Engine Customization\nWorkflow
             
                 </a>
             
@@ -2516,7 +2516,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.12.16" data-path="../../scripting/plugin-scripts.md">
+        <li class="chapter " data-level="3.12.16" data-path="../../scripting/external-scripts.md">
             
                 <span>
             
@@ -2963,12 +2963,12 @@
 
     
     <li class="version-link">
-        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">1.1</span></a>
+        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">3.0 Tech Preview</span></a>
         <ul class="hovershow">
             
             <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold">1.0</span></a></li>
             
-            <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold">3.0 Tech Preview</span></a></li>
+            <li><a href="https://docs.cocos.com/creator3d/1.1/manual/en" class="btn">Version: <span style="font-weight:bold">1.1</span></a></li>
             
         </ul>
     </li>
@@ -3005,19 +3005,20 @@
 <p>Mouse over this option and an <strong>Edit</strong> button will appear. Click this button and the panel will open. The first time you use this feature you need to fill out a questionnaire before opening the Replace Splash screen panel. There will be some project-based information in the questionnaire, and we hope to gather more information on games developed using <strong>Cocos Creator 3D</strong>, as well as more support programs in the future that developers will hopefully be able to fill out truthfully.</p>
 <p><img src="build-options/splash-setting.jpg" alt=""></p>
 <h3 id="included-scenes">Included Scenes</h3>
-<p>There are usually multiple game scenes in the project, this option allows you to choose the scenes you want to package. During the build process, all assets that depended on these selected scene assets in deep will be packaged. Just select the game scenes that are actually needed can reduce the size of game package after build. </p>
+<p>There are usually multiple game scenes in the project, this option allows you to choose the scenes you want to package. During the build process, all assets that depended on these selected scene assets in deep will be packaged. Just select the game scenes that are actually needed can reduce the size of game package after build.</p>
 <p>For more information about assets packaging, please refer to the <a href="build-guide">Build Process with FAQ</a> documentation.</p>
 <h3 id="start-scene">Start Scene</h3>
 <p>The first scene after entering the game can be set directly in the <strong>Start Scene</strong>. You can also choose other scenes, that are part of your game, in <strong>Included Scenes</strong>. Move the mouse to the scene, a <code>move up icon</code> button will appear after the scene, then click the button to set it.</p>
 <h3 id="source-maps">Source Maps</h3>
 <p>The build will compress engine files and project scripts by default, if you want to generate a <code>sourcemap</code>, you need to check this box.</p>
-<p>A <code>source map</code> is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger. </p>
+<p>A <code>source map</code> is a file that maps from the transformed source to the original source, enabling the browser to reconstruct the original source and present the reconstructed original in the debugger.</p>
 <p>For more details on <code>source maps</code>, please refer to the <a href="https://developer.mozilla.org/en-US/docs/Tools/Debugger/How_to/Use_a_source_map" target="_blank">Source Maps</a> documentation.</p>
 <h3 id="compress-texture">Compress Texture</h3>
-<p>Some compression options can be added to <code>spriteFrame</code> type image assets in the editor. Once enabled, the corresponding image assets are generated based on these compression options during build. If disabled, the compression texture will not take effect at build time even if configured. </p>
+<p>Some compression options can be added to <code>spriteFrame</code> type image assets in the editor. Once enabled, the corresponding image assets are generated based on these compression options during build. If disabled, the compression texture will not take effect at build time even if configured.</p>
 <p>Please refer to the <a href="../../asset/compress-texture.html">Compress Texture</a> documentation for details.</p>
 <h3 id="packautoatlas">packAutoAtlas</h3>
-<p>The <strong>Auto Atlas</strong> is the editor&apos;s built-in texture merge. If this is disabled, even if you configure the <code>packAutoAtlas</code>, it will not take effect at build time. </p>
+<p>The <strong>Auto Atlas</strong> is the editor&apos;s built-in texture merge. If this is disabled, even if you configure the <code>packAutoAtlas</code>, it will not take effect at build time.</p>
+<p>When the <strong>Auto Atlas</strong> is configured in the <code>resources</code> folder, the compiled image, the raw images and all the serialization JSON will be packaged. Please don&apos;t use it like that unless necessary.</p>
 <p>Please refer to the <a href="../../asset/auto-atlas.html">Auto Atlas</a> documentation for details.</p>
 <!-- ### 内联所有 SpriteFrame
 自动合并资源时，将所有 SpriteFrame 与被依赖的资源合并到同一个包中。建议网页平台开启，启用后会略微增大总包体，多消耗一点点网络流量，但是能显著减少网络请求数量。建议原生平台关闭，因为会增大热更新时的体积。 -->
@@ -3036,7 +3037,7 @@
 </blockquote>
 <p><img src="build-options/engine-excludes.jpg" alt=""></p>
 <h3 id="canvas">Canvas</h3>
-<p>Click <strong>Project -&gt; Project Setting -&gt; General -&gt; Default canvas setting</strong> in the menu bar to set the <strong>Canvas</strong>. The Canvas is mainly used to set multiple resolutions. If there is no <code>Canvas</code> component in the project, this option can be ignored. </p>
+<p>Click <strong>Project -&gt; Project Setting -&gt; General -&gt; Default canvas setting</strong> in the menu bar to set the <strong>Canvas</strong>. The Canvas is mainly used to set multiple resolutions. If there is no <code>Canvas</code> component in the project, this option can be ignored.</p>
 <p>Please refer to the <a href="../../ui-system/components/engine/multi-resolution.html">Multi-Resolution Adaption</a> documentation for details.</p>
 
                                 
@@ -3081,7 +3082,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"General Build Options","level":"2.7.2","depth":2,"next":{"title":"Publishing to the Web","level":"2.7.3","depth":2,"path":"editor/publish/publish-web.md","ref":"editor/publish/publish-web.md","articles":[]},"previous":{"title":"About the Build Panel","level":"2.7.1","depth":2,"path":"editor/publish/build-panel.md","ref":"editor/publish/build-panel.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"Manual","link":"https://docs.cocos.com/creator/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator/api/en"}]},{"name":"Cocos Creator 3D","links":[{"name":"Manual","link":"https://docs.cocos.com/creator3d/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator3d/api/en"}]},{"name":"Cocos2d-x","links":[{"name":"Manual","link":"https://docs.cocos.com/cocos2d-x/manual/en"},{"name":"API Ref","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"1.1","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/en"},{"name":"3.0 Tech Preview","link":"https://docs.cocos.com/creator3d/manual/en"}]}]},"language":"en","gitbook":"*"},"file":{"path":"editor/publish/build-options.md","mtime":"2020-08-03T18:48:29.152Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T18:51:52.294Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"General Build Options","level":"2.7.2","depth":2,"next":{"title":"Publishing to the Web","level":"2.7.3","depth":2,"path":"editor/publish/publish-web.md","ref":"editor/publish/publish-web.md","articles":[]},"previous":{"title":"About the Build Panel","level":"2.7.1","depth":2,"path":"editor/publish/build-panel.md","ref":"editor/publish/build-panel.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"Manual","link":"https://docs.cocos.com/creator/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator/api/en"}]},{"name":"Cocos Creator 3D","links":[{"name":"Manual","link":"https://docs.cocos.com/creator3d/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator3d/api/en"}]},{"name":"Cocos2d-x","links":[{"name":"Manual","link":"https://docs.cocos.com/cocos2d-x/manual/en"},{"name":"API Ref","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"3.0 Tech Preview","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/en"},{"name":"1.1","link":"https://docs.cocos.com/creator3d/1.1/manual/en"}]}]},"language":"en","gitbook":"*"},"file":{"path":"editor/publish/build-options.md","mtime":"2020-08-11T18:01:41.086Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-11T18:38:52.006Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -3121,6 +3122,10 @@
     
         
         <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         

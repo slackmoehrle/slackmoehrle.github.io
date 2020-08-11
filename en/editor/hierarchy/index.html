@@ -76,12 +76,12 @@
         
         
         <li class="version-link">
-            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">1.1</span></a>
+            <a href="#" class="btn" style="color:#444"></i>Version: <span style="font-weight: bold; display: inline">3.0 Tech Preview</span></a>
             <ul class="hovershow">
                 
                 <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">1.0</span></a></li>
                 
-                <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">3.0 Tech Preview</span></a></li>
+                <li><a href="https://docs.cocos.com/creator3d/1.1/manual/en" class="btn">Version: <span style="font-weight:bold; display: inline">1.1</span></a></li>
                 
             </ul>
         </li>
@@ -366,7 +366,7 @@
                 <span>
             
                     
-                    Engine Customization Workflow
+                    Engine Customization\nWorkflow
             
                 </a>
             
@@ -2516,7 +2516,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.12.16" data-path="../../scripting/plugin-scripts.md">
+        <li class="chapter " data-level="3.12.16" data-path="../../scripting/external-scripts.md">
             
                 <span>
             
@@ -2963,12 +2963,12 @@
 
     
     <li class="version-link">
-        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">1.1</span></a>
+        <a class="btn" style="color:#444">Version: <span style="font-weight:bold">3.0 Tech Preview</span></a>
         <ul class="hovershow">
             
             <li><a href="https://docs.cocos.com/creator3d/1.0/manual/en" class="btn">Version: <span style="font-weight:bold">1.0</span></a></li>
             
-            <li><a href="https://docs.cocos.com/creator3d/manual/en" class="btn">Version: <span style="font-weight:bold">3.0 Tech Preview</span></a></li>
+            <li><a href="https://docs.cocos.com/creator3d/1.1/manual/en" class="btn">Version: <span style="font-weight:bold">1.1</span></a></li>
             
         </ul>
     </li>
@@ -2995,11 +2995,11 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="hierarchy-panel">Hierarchy Panel</h1>
-<p><strong>Hierarchy Manager</strong> is the panel used to show the hierarchical relationship of most nodes in the current scene. There are some nodes in the scene that do not need to be displayed, which are generally the necessary factors to support the display of the scene, but they are not operable and can be ignored by the user. If there is a plug-in, you can see the details of the plug-in.</p>
+<p>The <strong>Hierarchy Manager</strong> is the panel used to show the hierarchical relationship of most nodes in the current scene. There are some nodes in the scene that do not need to be displayed, which are generally the necessary factors to support the display of the scene, but they are not operable and can be ignored by the user. If there is a plug-in, you can see the details of the plug-in.</p>
 <p>You can <em>select</em>, <em>create</em>, <em>move</em>, <em>rename</em> or <em>delete</em> nodes in the <strong>Hierarchy Manager</strong>. Any node can create a child node. The coordinate system of the child node is relative to the parent node.</p>
 <p><img src="img/thumb.gif" alt="Panel Overview"></p>
 <h2 id="hierarchy-manager-introduction">Hierarchy Manager introduction</h2>
-<p><strong>Hierarchy Manager</strong> contains a top menu area and a bottom tree list area on the panel:</p>
+<p>The <strong>Hierarchy Manager</strong> contains a top menu area and a bottom tree list area on the panel:</p>
 <ul>
 <li>The functions of the top menu are: <strong>New Node Button</strong>, <strong>Search Type Button</strong>, <strong>Search Box</strong>, <strong>Fold All or Expand Button</strong>, <strong>Refresh List Button</strong>.</li>
 <li>The tree-like list area at the bottom mainly reflects the hierarchical relationship of nodes. The root node is <strong>scene node</strong>. When editing the prefab file, is the root node <strong>scene node</strong>, but the top node of itself. There is a blank area with a height of 20px at the end of the tree-shaped area. Click here to <strong>uncheck</strong>, that is, the <strong>Hierarchy Manager</strong> can have no selected items.</li>
@@ -3025,8 +3025,8 @@
 <p><img src="img/create.png" alt="New Node"></p>
 <p>In addition, there is a <strong>New</strong> entry in the right-click menu of the node.</p>
 <p><img src="img/context-menu.png" alt="Right click menu"></p>
-<p>For the UI node, in order for it to display properly, at least one of its superior nodes must contain a <strong>cc.UITransformComponent</strong> component, so when it is created, if it does not meet the rules, it will assist in adding a <strong>Canvas</strong> node as Its parent.</p>
-<p>In addition, a node can be generated by dragging a <strong>prefab</strong> asset from the <strong>Asset Manager</strong> to <strong>Hierarchy Manager</strong>.
+<p>For the UI node, in order for it to display properly, at least one of its parent nodes must contain a <strong>cc.UITransformComponent</strong> component, so when it is created, if it does not meet the rules, it will assist in adding a <strong>Canvas</strong> node as it&apos;s parent.</p>
+<p>In addition, a node can be generated by dragging a <strong>prefab</strong> asset from the <strong>Asset Manager</strong> to the <strong>Hierarchy Manager</strong>.
 You can generate a asset by dragging a <strong>prefab</strong> node into the <strong>Asset Manager</strong> through the <strong>Hierarchy Manager</strong>.</p>
 <h2 id="moving-a-node">Moving a Node</h2>
 <p>The movement is divided into <strong>moved node</strong> and <strong>target placement node</strong>, in which the height of <strong>target placement node</strong> is identified in three parts: <em>upper</em>, <em>middle</em>, and <em>lower</em>. These indicate:</p>
@@ -3038,12 +3038,12 @@ You can generate a asset by dragging a <strong>prefab</strong> node into the <st
 <p><img src="img/drop.png" alt="Move to node"></p>
 <p><img src="img/after.png" alt="Move below node"></p>
 <h2 id="searching-for-a--node">Searching for a  Node</h2>
-<p>The search types are: <strong>search name</strong>, <strong>search UUID</strong>, <strong>search path</strong> and <strong>search component name</strong>. <strong>search component name</strong> is the search node component. The component name can be viewed in <strong>Property Inspector</strong>, as <strong>cc.ModelComponent</strong>.</p>
-<p><strong>Search box</strong> is searched in real time. When a node is selected in the search results, after clearing the search content, it will be relocated to the selected node.</p>
+<p>The search types are: <strong>search name</strong>, <strong>search UUID</strong>, <strong>search path</strong> and <strong>search component name</strong>. <strong>search component name</strong> is the search node component. The component name can be viewed in the <strong>Property Inspector</strong>, as <strong>cc.ModelComponent</strong>.</p>
+<p>The <strong>Search box</strong> is searched in real time. When a node is selected in the search results, after clearing the search content, it will be relocated to the selected node.</p>
 <p><img src="img/search-type.png" alt="Search Node"></p>
 <p><img src="img/search.png" alt="Search Node"></p>
 <h2 id="renaming-a-node">Renaming a node</h2>
-<p>Select a node, press the shortcut key <strong>Enter</strong> or <strong>F2</strong>, or right-click the menu and selectg <strong>Rename</strong> to modify. The node name is allowed to be empty, press the shortcut key <strong>Esc</strong> to cancel this rename. Different nodes can have the same name.</p>
+<p>Select a node, press the shortcut key <strong>Enter</strong> or <strong>F2</strong>, or right-click the menu and select <strong>Rename</strong> to modify. The node name is allowed to be empty, press the shortcut key <strong>Esc</strong> to cancel this rename. Different nodes can have the same name.</p>
 <p><img src="img/rename.png" alt="Move below node"></p>
 
                                 
@@ -3088,7 +3088,7 @@ You can generate a asset by dragging a <strong>prefab</strong> node into the <st
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Hierarchy Manager","level":"2.1.2","depth":2,"next":{"title":"Assets","level":"2.1.3","depth":2,"path":"editor/assets/index.md","ref":"editor/assets/index.md","articles":[]},"previous":{"title":"Scene Editor","level":"2.1.1","depth":2,"path":"editor/scene/index.md","ref":"editor/scene/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"Manual","link":"https://docs.cocos.com/creator/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator/api/en"}]},{"name":"Cocos Creator 3D","links":[{"name":"Manual","link":"https://docs.cocos.com/creator3d/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator3d/api/en"}]},{"name":"Cocos2d-x","links":[{"name":"Manual","link":"https://docs.cocos.com/cocos2d-x/manual/en"},{"name":"API Ref","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"1.1","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/en"},{"name":"3.0 Tech Preview","link":"https://docs.cocos.com/creator3d/manual/en"}]}]},"language":"en","gitbook":"*"},"file":{"path":"editor/hierarchy/index.md","mtime":"2020-08-03T18:48:29.150Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-03T18:51:52.294Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"Hierarchy Manager","level":"2.1.2","depth":2,"next":{"title":"Assets","level":"2.1.3","depth":2,"path":"editor/assets/index.md","ref":"editor/assets/index.md","articles":[]},"previous":{"title":"Scene Editor","level":"2.1.1","depth":2,"path":"editor/scene/index.md","ref":"editor/scene/index.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","github-issue-feedback-language-custom","search-title","anchorjs","sharing","splitter","theme-default-customize@git+https://github.com/cocos-creator/theme-default.git","expandable-chapters-small@git+https://github.com/cocos-creator/gitbook-plugin-expandable-chapters-small.git"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"livereload":{},"splitter":{},"search":{"maxIndexSize":1000000000},"lunr":{"maxIndexSize":1000000000},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default-customize":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"search-title":{},"highlight":{},"expandable-chapters-small":{},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper"],"douban":false,"facebook":true,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"github-issue-feedback-language-custom":{"repo":"cocos-creator/docs-3D","branch":"master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"index.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"products":[{"name":"Cocos Creator","links":[{"name":"Manual","link":"https://docs.cocos.com/creator/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator/api/en"}]},{"name":"Cocos Creator 3D","links":[{"name":"Manual","link":"https://docs.cocos.com/creator3d/manual/en"},{"name":"API Ref","link":"https://docs.cocos.com/creator3d/api/en"}]},{"name":"Cocos2d-x","links":[{"name":"Manual","link":"https://docs.cocos.com/cocos2d-x/manual/en"},{"name":"API Ref","link":"http://docs.cocos2d-x.org/api-ref/index.html"}]}],"version":[{"name":"3.0 Tech Preview","links":[{"name":"1.0","link":"https://docs.cocos.com/creator3d/1.0/manual/en"},{"name":"1.1","link":"https://docs.cocos.com/creator3d/1.1/manual/en"}]}]},"language":"en","gitbook":"*"},"file":{"path":"editor/hierarchy/index.md","mtime":"2020-08-11T18:01:41.082Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-08-11T18:38:52.006Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
@@ -3128,6 +3128,10 @@ You can generate a asset by dragging a <strong>prefab</strong> node into the <st
     
         
         <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
